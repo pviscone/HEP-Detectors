@@ -116,16 +116,100 @@ Il range è la lunghezza percorsa dalla particella nel materiale $R=\int_{T_0}^0
 
 | ![image-20220214185815482](Notes.assets/image-20220214185815482.png) |
 | ------------------------------------------------------------ |
-|                                                              |
-|                                                              |
 
-LEGGERE SU KOLANOSKI PARTE DEL RANGE
+Quando sono coinvolti fenomeni di assorbimento il numero di particelle decresce esponenzialmente (fotoni).
+
+Quando sono coinvolte particelle cariche il numero di particelle rimane pressocchè costante. In figura si vede una lieve diminuzione dovuta a interazioni nucleari.
+
+Si nota anche che il $dN/dx$​ non è una delta ma ha una sua larghezza chiamata **straggling** : questo fenomeno è dovuto alle fluttuazioni statistiche dell'energia rilasciata nel materiale (vedi più avanti)
+
+| <img src="Notes.assets/image-20220216172742194.png" alt="image-20220216172742194" style="zoom:67%;"> |
+| :----------------------------------------------------------: |
+| Range normalizzato per la densità del materiale in funzione di $\beta \gamma$ . Plot utile per capire quanto materiale usare in un esperimento |
+
+Se si esprime l'integrale del range in funzione di $\gamma$ si ha $R=\frac{M}{z^2}f(\gamma_0)$ dove $\gamma_0$ è il $\gamma$ iniziale della particella e $f(\gamma_0)$ è una funzione indipendente dalle proprietà della particella (massa e carica) e dipende solo dal materiale. Quindi il range scala come $M/z^2$ (riferite alla particella)
 
 ### Particelle poco massive
 
 #### Bremstrahlung e lunghezza di radiazione
 
 ### Fluttuazioni statistiche
+
+La Bethe block determina solo il $dE/dx$ medio ma in realtà l'energia rilasciata è soggetta a fluttuazioni.
+
+L'energia persa $\Delta E$ in un tratto $\Delta x$ è la somma di tutti i processi di eccitazione/ionizzazione lungo il tratto percorso $\Delta E= \sum^N_{n=1} \delta E_n$.
+Ci sono 2 contributi statistici:
+
+- Uno dovuto al numero di ionizzazioni/eccitazioni (conteggio)
+- Uno dovuto all'energia emessa dal processo
+
+Queste fluttuazioni possono causare una serie di problemi
+
+- **Incertezza sul momento**:Per ricostruire il momento di una particella solitamente si usa la Bethe Block per capire quanta energia ha perso nel detector ma le fluttuazioni statistiche introducono un'incertezza sull'energia persa e quindi anche sul momento
+- **Incertezze nel PID** poichè la particle identification si fa soprattutto tramite le misure del $$dE/dx$$ è introdotta un incertezza anche su questo
+- **Incertezze nel tracking**: I tracker sono solitamente sottili quindi soffrono delle fluttuazioni poissoniane. Inoltre la risoluzione spaziale è ulteriormente ridotta dagli elettroni delta che possono anche causare ionizzazioni secontarie
+
+#### Fluttuazioni del numero di processi
+
+E' una fluttuazione di tipo **Poissoniano**, rilevante soprattutto in detector sottili (molto usati nel tracking) e l'incertezza relativa è 
+$$
+\frac{\sigma(\Delta E)}{\Delta E}\sim\frac{1}{\sqrt{N}}
+$$
+
+> In caso di rivelatore spesso 1cm di Argon questa incertezza è del 10%
+>
+> I rivelatori a semiconduttore invece necessitano energie molto più basse per produrre una coppia elettrone lacuna quindi vengono creati molti più elettroni e l'incertezza è molto ridotta rispetto i rilevatori a gas
+
+#### Fluttuazioni nell'energia rilasciata
+
+Dalla distribuzione angolare degli elettroni emessi nel processo di ionizzazione si trova che tra un valore $\delta E_{min}$ (dato dall'energia di ionizzazione dell'atome) e un valore $\delta E_{max}$ (dato da constraint cinematici) la distribuzione di $\delta E$ ha un andamento $\sim 1/(\delta E)^2$ .
+
+Il massimo della distribuzione si ha intorno a $\delta E_{min}$ ma ricordiamo che per energie più alte si presenta il problema degli elettroni delta 
+
+#### Distribuzione di Landau-Vavilov
+
+Generalmente le fluttuazioni nell'energia rilasciata portano a una distibuzione asimmetrica composta da una parte gaussiana (dovuta a piccole perdite di energia) e una lunga coda (per grandi perdite di energia)
+
+> **NB :** A causa dell'asimmetria della distribuzione il valore più probabile di energia rilasciata NON è quello che vediamo nella Bethe Block (che è la media) che è un po' più alto della moda della distribuzione
+
+Il primo a trovare una distribuzione fu **Landau** sotto le seguenti ipotesi:
+
+- $lim_{k \to0} T_{max}= +\infty$
+- Gli elettroni sono trattati come quasi liberi, sono trascurati gli effetti di legame per bassi valori dell'energia trasferita
+- La perdita di energia della particella nel mezzo può essere trascurata
+
+$$
+f_L(\lambda)=\frac{1}{\pi}\int_0^\infty e^{-t ln (t)-\lambda t }\sin (\pi t) dt
+\\
+\;\;\lambda=\frac{\Delta E -\Delta E_w}{\xi} \;\;
+\\
+\;\;\Delta E_w=\text{Massimo della distr.}
+$$
+
+
+
+La forma della distribuzione dipende dal parametro $k=\xi/T_{max}$ dove $T_{max}$ è l'energia cinetica massima cedibile a un elettrone e $\xi \propto \rho\frac{Z}{A}\frac{z^2}{\beta^2} \Delta x$  è il fattore moltiplicativo presente nella bethe block quindi essezialmente $\xi \simeq dE/dx$ (almeno concettualmente, nell'andamento)
+
+- **k grande** implica **distribuzione simmetrica (Gaussiana)**
+- **k piccolo** implica **distribuzione asimmetrica**
+
+La distribuzione di landau è un'ottima **approssimazione per piccoli valori di k**
+
+| <img src="Notes.assets/image-20220216191943021.png" alt="image-20220216191943021" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Distribuzione di Landau. Il $\Delta \lambda$ è la larghezza a metà altezza |
+
+> La landau può essere approssiamata dalla distribuzione di Moyal $f=\frac{1}{\sqrt{2\pi}}e^{-0.5(\lambda+e^{-\lambda})}$ 
+> In questo caso però $\lambda$ perde il senso fisico che ha nella landau per questo è preferibile usare la landau
+
+**Vavilov** generalizzò la distribuzione anche per grandi valori di k ma comunque mantenendo l'assunzione che gli effetti di legame siano trascurabili per piccoli davoli di energia trasferita.
+Questa distribuzione ha 2 parametri aggiuntivi rispetto alla distribuzione di Landau
+
+> Senza entrare nel dettaglio la Vavilov è definita tramite una trasformata di Laplace
+
+#### Soppressione delle fluttuazioni
+
+La fluttuazioni possono essere ridotte se la moda della distribuzione può essere usata come uno stimatore dell'energia persa al posto della media poichè ???????
 
 ### Multiplo scattering
 
