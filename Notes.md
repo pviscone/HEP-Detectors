@@ -8,7 +8,8 @@
 
 ## SISTEMA
 
-Vedi come impostare snippets, metti BB=beta GG=\gamma FF=\frac{}{}, ^=^{} , \_=\_{}  
+- Vedi come impostare snippets, metti BB=beta GG=\gamma FF=\frac{}{}, ^=^{} , \_=\_{}  
+- Aggiungi plugin per newpage in pdf
 
 # Introduzione
 
