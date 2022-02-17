@@ -302,6 +302,14 @@ Quello che viene prodotto è un cono luminoso con una apertura angolare di $\cos
 
 L'energia persa per radiazione cherenkov è solitamente molto bassa e trascurabile (Comunque inclusa nella bethe bloch nelle perdite radiative)
 
+### Misture
+
+Soprattutto nei detector gassosi possono essere presenti più materiali insieme
+
+![image-20220217042603821](Notes.assets/image-20220217042603821.png)
+
+Per la lunghezza di radiazione invece $\frac{1}{\rho X_0}|_{\text{eff.}}=\sum_i \frac{1}{\rho_i X_{0_i}}$
+
 ## Interazione di fotoni
 
 ## Interazioni adroniche
