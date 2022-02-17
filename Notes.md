@@ -1,5 +1,15 @@
 [TOC]
 
+## CHIEDI A FORTI o controlla
+
+- Lunghezza di radiazione per particelle diverse da elettroni (su pdg sta scritto insensato)
+- Per stimare energia persa usare moda o mediana della landau?
+- Cherenkov incluso nella bethe bloch?
+
+## SISTEMA
+
+Vedi come impostare snippets, metti BB=beta GG=\gamma FF=\frac{}{}, ^=^{} , \_=\_{}  
+
 # Introduzione
 
 | ![image-20220214164823650](Notes.assets/image-20220214164823650.png) |
@@ -12,7 +22,7 @@ Aggiungi dati su materiali più importanti
 
 Aggiungi info utili da pdg man mano che fai esercizi
 
-Vedi come impostare snippets, metti BB=beta GG=\gamma FF=\frac{}{}, ^=^{} , \_=\_{}  
+
 
 # Interazione radiazione materia
 
@@ -75,13 +85,13 @@ Analizziamo le diverse regioni della curva:
 
 - Dopo il minimo di ionizzazione si ha una risalita $\propto ln(\beta \gamma)^2$ dovuta all'estensione relativistica del campo elettrico trasversale ma per grandi $\beta \gamma$ il dielettrico viene polarizzato e si ha una saturazione (*effetto del $\delta$*)
 
-- Al di sopra dell' **energia critica** dominano le perdite radiative ovvero la Bremstrahlung
+- Al di sopra dell' **energia critica** dominano le perdite radiative ovvero la Bremstrahlung e altri processi minori
 
 Concentriamoci un attimo sulle perdite per **ionizzazione**
 
 | ![image-20220214173007634](Notes.assets/image-20220214173007634.png) |
 | ------------------------------------------------------------ |
-| Bethe-Block: dE/dx dovuta unicamente alla ionizzazione (zona centrale dello stopping power) |
+| Bethe-Block: dE/dx dovuta unicamente alla ionizzazione (zona centrale dello stopping power) (e alla radiazione Cherenkov). Non include nè le perdite per bremstrahlung (dominante ad alte energie) nè le perdite per radiazione di transizione |
 
 | <img src="Notes.assets/image-20220214175355949.png" alt="image-20220214175355949" style="zoom:70%;" /><img src="Notes.assets/image-20220214175429234.png" alt="image-20220214175429234" style="zoom:67%;" /> |
 | ------------------------------------------------------------ |
@@ -101,7 +111,7 @@ Alcune osservazioni sulla Bethe-Block (ionizzazione):
 Per particelle massive con momenti molto bassi si può osservare il picco di Bragg
 
 | ![image-20220214183616196](Notes.assets/image-20220214183616196.png)La dose non è altro che E/M |
-| ------------------------------------------------------------ |
+| :----------------------------------------------------------- |
 | Man mano che la particella perde energia lo stopping power aumenta. E' possibile ricostruire l'energia persa in funzione della penetrazione usando l'andamento $\beta^{-2}$ valido a basse energie |
 
 #### Elettroni delta
@@ -115,7 +125,7 @@ Se il detector non riesce a trattare adeguatamente questi elettroni si può aver
 Il range è la lunghezza percorsa dalla particella nel materiale $R=\int_{T_0}^0 (\frac{dE}{dx})^{-1} dT$ dove $T_0$ è l'energia cinetica iniziale della particella.
 
 | ![image-20220214185815482](Notes.assets/image-20220214185815482.png) |
-| ------------------------------------------------------------ |
+| :----------------------------------------------------------: |
 
 Quando sono coinvolti fenomeni di assorbimento il numero di particelle decresce esponenzialmente (fotoni).
 
@@ -129,11 +139,59 @@ Si nota anche che il $dN/dx$​ non è una delta ma ha una sua larghezza chiamat
 
 Se si esprime l'integrale del range in funzione di $\gamma$ si ha $R=\frac{M}{z^2}f(\gamma_0)$ dove $\gamma_0$ è il $\gamma$ iniziale della particella e $f(\gamma_0)$ è una funzione indipendente dalle proprietà della particella (massa e carica) e dipende solo dal materiale. Quindi il range scala come $M/z^2$ (riferite alla particella)
 
-### Particelle poco massive
+
+
+### Particelle poco massive ($e^-$ ed $e^+$)
+
+Per le particelle cariche poco massive (elettroni e positroni) vale quanto detto sopra ma sono presenti dei fenomeni aggiuntivi: 
+
+- La **bremstrahlug**  
+- Gli elettroni incidenti scatterano con elettroni atomici: Sono particelle identiche, interviene il principio di pauli
+- Per positroni va considerata l'annichilazione con gli elettroni atomici
+
+Generalmente, oltre a prendere in considerazione la bremstrahlung, vanno considerati 2 regimi di energia:
+
+- Quando i livelli energetici degli elettroni atomici NON possono essere trascurati si fa la media come nel caso di particelle massive
+- Quando si hanno grandi trasferimenti di energia vengono considerati gli scattering Moller ($e^- e^- \to e^- e^-$) e Bhabha ($e^+ e^- \to e^+ e^-$)  
+
+| <img src="Notes.assets/image-20220217021527324.png" alt="image-20220217021527324" style="zoom:70%;" /> |
+| ------------------------------------------------------------ |
+| Per particelle leggere il dE/dx è molto diverso in quanto la bremmstrahlung diventa dominante già sotto il GeV, nel piombo già a 7MeV<br /><br />Anche qui si nota l'effetto per il quale la particella con carica negativa a basse energie perde un po' meno energia |
 
 #### Bremstrahlung e lunghezza di radiazione
 
-### Fluttuazioni statistiche
+Consiste nell'irragiamento dovuto alla deflessione dell'elettrone causata dal campo elettrico nucleare (scattering Rutherford con il nucleo)
+
+L'energia emessa per una carica accelerata, sia nel limite classico che quantistico, è $dE/dt \propto \frac{1}{m^2}$
+
+> **NB** Ad altissime energie (es. LHC) la bremmstrahlung diventa rilevante anche per muoni e pioni
+
+$$
+-\frac{dE}{dX}|_{\text{Brem.}}= \frac{E}{X_0} \implies
+\\
+\implies E(x)=E_0 e^{-x/X_0}
+$$
+
+
+
+| ![image-20220217023944500](Notes.assets/image-20220217023944500.png) |
+| :----------------------------------------------------------: |
+| $X_0$ è chiamata **lunchezza di radiazione** e corrispone alla lunghezza dopo il quale l'energia di un **elettrone** è ridotta di un frattore $1/e$ (per bremmstrahlung) |
+| **NB** La lungheza di radiazione è definita solo per elettroni in quanto per altre particelle molto energetiche come muoni le fluttuazioni di energia sono molto grandi e spesso sono associate a sciamature quindi parlare di perdita di energia come un processo uniforme e continuo è insensato |
+
+Inoltre quando avviene Bremmstrahlung dobbiamo considerare vari possibili fenomeni:
+
+- Correzioni di Coulomb: Correzione dovuta all'interferenza della funzione d'onda della particella con il campo coulombiano
+
+- Suppressione dielettrica: Fotoni emessi a piccole energie vengono assorbiti nel materiali a causa della polarizzabilità del materiale causando una perdita di coerenza e un cutoff infrarosso nello spettro del fotone
+
+- La bremmstrahlung può avvenire anche con il campo elettrico degli elettroni atomici (basta sostituzione $Z^2 \to Z(Z+1)$)
+
+- Effetto LPM: Ad altissime energie (sopra il TeV) la Bremmstrahlung (e la produzione di coppie) è soppressa .
+
+  Ad alte energie per energie perse piccole l'interazzione avviene su lunghe distanze. Se questa distanza è maggiore del cammino libero medio (distanza media tra 2 eventi successivi) la prima emissione interferisce con la seconda introducendo causando una soppressione nello spettro dei fotoni
+
+###  Fluttuazioni statistiche
 
 La Bethe block determina solo il $dE/dx$ medio ma in realtà l'energia rilasciata è soggetta a fluttuazioni.
 
@@ -199,8 +257,8 @@ La distribuzione di landau è un'ottima **approssimazione per piccoli valori di 
 | :----------------------------------------------------------: |
 | Distribuzione di Landau. Il $\Delta \lambda$ è la larghezza a metà altezza |
 
-> La landau può essere approssiamata dalla distribuzione di Moyal $f=\frac{1}{\sqrt{2\pi}}e^{-0.5(\lambda+e^{-\lambda})}$ 
-> In questo caso però $\lambda$ perde il senso fisico che ha nella landau per questo è preferibile usare la landau
+> La landau può essere approssiamata dalla distribuzione di Moyal $f(\lambda)=\frac{1}{\sqrt{2\pi}}e^{-0.5(\lambda+e^{-\lambda})}$ 
+> In questo caso però $\lambda$ perde il senso fisico che ha nella landau per questo è preferibile usare la Landau
 
 **Vavilov** generalizzò la distribuzione anche per grandi valori di k ma comunque mantenendo l'assunzione che gli effetti di legame siano trascurabili per piccoli davoli di energia trasferita.
 Questa distribuzione ha 2 parametri aggiuntivi rispetto alla distribuzione di Landau
@@ -209,11 +267,39 @@ Questa distribuzione ha 2 parametri aggiuntivi rispetto alla distribuzione di La
 
 #### Soppressione delle fluttuazioni
 
-La fluttuazioni possono essere ridotte se la moda della distribuzione può essere usata come uno stimatore dell'energia persa al posto della media poichè ???????
+La fluttuazioni possono essere ridotte se la moda della distribuzione può essere usata come uno stimatore dell'energia persa al posto della media poichè la moda gode di uno stimatore migliore (La distribuzione ha una coda molto lunga quindi la media aritmetica potrebbe avere una varianza molto grande rispetto alla moda soprattutto ad alte energie)
+
+| <img src="Notes.assets/image-20220217014236788.png" alt="image-20220217014236788" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Le curve tratteggiate sono relative alla moda invece che alla media. Si nota che ad alte energie la media sale molto di più rispetto alla moda |
+
+Altri metrodi per eliminare incertezze sono:
+
+- Escludere gli elettroni deltra dalle misurse (Possibile in cloud/bubble chamber e in layer indipendenti molto sottili di un detector)
+- Usare una media troncata scartando i valori più alti e più bassi (Stima più robusta)
+- Ricostruire l'energia persa dalla particella durante il suo percorso e non solo alla fine (Utile nella misura del momento.)
 
 ### Multiplo scattering
 
+In un materiale possono avvenire scattering multipli. Questi causano un'incertezza nella direzione della particella.
+La distribuzione angolare dell'angolo di scattering medio può essere ben approssimata  con una gaussiana (per limite centrale)
+
+>
+> per un numero finito e fissato di scattering c'è distribuzione di Moliere che però predice probabilità più alte per grandi angoli come Rutherford
+
+| <img src="Notes.assets/image-20220217025524958.png" alt="image-20220217025524958" style="zoom:60%;" /> |
+| :----------------------------------------------------------: |
+| Deviazione standard dell'angolo di scattering nell'approssimazione gaussiana a piccoli angoli (valida al di sopra dei 20MeV) |
+
+<img src="Notes.assets/image-20220217030024845.png" alt="image-20220217030024845" style="zoom:50%;" />
+
 ### Radiazione Cherenkov
+
+La radiazione Cherenkov avviene quando una particella carica attraversa un mezzo a una velocità maggiore della velocità della luce nello stesso mezzo causando un'onda d'urto luminosa.
+
+Quello che viene prodotto è un cono luminoso con una apertura angolare di $\cos(\theta_c)=\frac{1}{n\beta}$ , questo significa che la luce cherenkov può essere usata per trovare $\beta$ o come threshold in quanto viene emessa solo per $\beta>1/n$
+
+L'energia persa per radiazione cherenkov è solitamente molto bassa e trascurabile (Comunque inclusa nella bethe bloch nelle perdite radiative)
 
 ## Interazione di fotoni
 
