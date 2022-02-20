@@ -41,8 +41,8 @@ Lo stopping power è definito come il $-dE/dx$ per unità di densità del materi
 
 Queste curve, se non normalizzate per la massa della particella, possono essere utili per fare particle identification poichè ogni particella segue una curva a se
 
-| ![image-20220214171429817](images/Interazione_radiazione_materia/image-20220214171429817.png) |
-| ------------------------------------------------------------ |
+| <img src="images/Interazione_radiazione_materia/image-20220214171429817.png" alt="image-20220214171429817" style="zoom:80%;" /> |
+| :----------------------------------------------------------: |
 | Plot dello stopping power **per particelle con $M>>m_e$** . Per elettroni e positroni domina Bremstrahlung. <br />Possiamo distinguere 3 zone : <br />zona di scattering elastico, di ionizzazione e di Bremstrahlung |
 
 Analizziamo le diverse regioni della curva:
@@ -86,8 +86,8 @@ Alcune osservazioni sulla Bethe-Block (ionizzazione):
 
 Per particelle massive con momenti molto bassi si può osservare il picco di Bragg
 
-| ![image-20220214183616196](images/Interazione_radiazione_materia/image-20220214183616196.png)La dose non è altro che E/M |
-| :----------------------------------------------------------- |
+| <img src="images/Interazione_radiazione_materia/image-20220214183616196.png" alt="image-20220214183616196" style="zoom:67%;" />La dose non è altro che E/M |
+| :----------------------------------------------------------: |
 | Man mano che la particella perde energia lo stopping power aumenta. E' possibile ricostruire l'energia persa in funzione della penetrazione usando l'andamento $\beta^{-2}$ valido a basse energie |
 
 #### Elettroni delta
@@ -100,7 +100,7 @@ Se il detector non riesce a trattare adeguatamente questi elettroni si può aver
 
 Il range è la lunghezza percorsa dalla particella nel materiale $R=\int_{T_0}^0 (\frac{dE}{dx})^{-1} dT$ dove $T_0$ è l'energia cinetica iniziale della particella.
 
-| ![image-20220214185815482](images/Interazione_radiazione_materia/image-20220214185815482.png) |
+| <img src="images/Interazione_radiazione_materia/image-20220214185815482.png" alt="image-20220214185815482" style="zoom:67%;" /> |
 | :----------------------------------------------------------: |
 
 Quando sono coinvolti fenomeni di assorbimento il numero di particelle decresce esponenzialmente (fotoni).
@@ -150,7 +150,7 @@ $$
 
 
 
-| ![image-20220217023944500](images/Interazione_radiazione_materia/image-20220217023944500.png) |
+| <img src="images/Interazione_radiazione_materia/image-20220217023944500.png" alt="image-20220217023944500" style="zoom: 80%;" /> |
 | :----------------------------------------------------------: |
 | $X_0$ è chiamata **lunghezza di radiazione** e corrispone alla lunghezza dopo il quale l'energia di un **elettrone** è ridotta di un frattore $1/e$ (per bremmstrahlung) |
 | **NB** La lungheza di radiazione è definita solo per elettroni in quanto per altre particelle molto energetiche come muoni le fluttuazioni di energia sono molto grandi e spesso sono associate a sciamature quindi parlare di perdita di energia come un processo uniforme e continuo è insensato |
@@ -270,7 +270,7 @@ La distribuzione angolare dell'angolo di scattering medio può essere ben appros
 >
 > per un numero finito e fissato di scattering c'è distribuzione di Moliere che però predice probabilità più alte per grandi angoli come Rutherford
 
-| <img src="images/Interazione_radiazione_materia/image-20220217025524958.png" alt="image-20220217025524958" style="zoom:60%;" /> |
+| <img src="images/Interazione_radiazione_materia/image-20220217025524958.png" alt="image-20220217025524958" style="zoom: 67%;" /> |
 | :----------------------------------------------------------: |
 | Deviazione standard dell'angolo di scattering nell'approssimazione gaussiana a piccoli angoli (valida al di sopra dei 20MeV) |
 
@@ -300,8 +300,8 @@ Per la lunghezza di radiazione invece $\frac{1}{\rho X_0}|_{\text{eff.}}=\sum_i 
 
 ## Interazione di fotoni
 
-| <img src="images/Interazione_radiazione_materia/image-20220220114414907.png" alt="image-20220220114414907" style="zoom:80%;" /> |
-| :----------------------------------------------------------- |
+| <img src="images/Interazione_radiazione_materia/image-20220220114414907.png" alt="image-20220220114414907" style="zoom: 74%;" /> |
+| :----------------------------------------------------------: |
 | $k_e$: Produzione di coppie nel campo degli elettroni<br />$k_n$: Produzione di coppie nel campo dei nuclei<br />$\sigma_{g.d.r.}$: Interazione fotonucleare<br />Si noti come per materiali leggeri l'effetto compton è dominante per un range molto più ampio di energia e comunque sempre dominante intorno a 1MeV |
 
 Le interazioni principali dei fotoni con la materia sono:
@@ -458,3 +458,12 @@ Le tipiche reazioni cercate sono:
 $\nu+n \to (e,\mu,\tau) +p$ o corrispondente con le antiparticelle
 
 Per 1km di acqua la probabilità di interazione per un neutrino da 200 GeV è $\sim 6 \cdot 10^{-15}$ quindi sono necessari detector enormi con tonnellate di acqua/ghiaccio o scintillatore o grandi sandwitch di convertitore/detector
+
+------
+
+------
+
+<div style="page-break-after: always; break-after: page;"></div>
+
+# Formazione del segnale
+
