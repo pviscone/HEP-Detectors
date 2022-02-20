@@ -131,7 +131,7 @@ Generalmente, oltre a prendere in considerazione la bremstrahlung, vanno conside
 - Quando si hanno grandi trasferimenti di energia vengono considerati gli scattering Moller ($e^- e^- \to e^- e^-$) e Bhabha ($e^+ e^- \to e^+ e^-$)  
 
 | <img src="images/Interazione_radiazione_materia/image-20220217021527324.png" alt="image-20220217021527324" style="zoom:70%;" /> |
-| ------------------------------------------------------------ |
+| :----------------------------------------------------------: |
 | Per particelle leggere il dE/dx è molto diverso in quanto la bremmstrahlung diventa dominante già sotto il GeV, nel piombo già a 7MeV<br /><br />Anche qui si nota l'effetto per il quale la particella con carica negativa a basse energie perde un po' meno energia |
 
 #### Bremstrahlung e lunghezza di radiazione
@@ -152,8 +152,17 @@ $$
 
 | ![image-20220217023944500](images/Interazione_radiazione_materia/image-20220217023944500.png) |
 | :----------------------------------------------------------: |
-| $X_0$ è chiamata **lunchezza di radiazione** e corrispone alla lunghezza dopo il quale l'energia di un **elettrone** è ridotta di un frattore $1/e$ (per bremmstrahlung) |
+| $X_0$ è chiamata **lunghezza di radiazione** e corrispone alla lunghezza dopo il quale l'energia di un **elettrone** è ridotta di un frattore $1/e$ (per bremmstrahlung) |
 | **NB** La lungheza di radiazione è definita solo per elettroni in quanto per altre particelle molto energetiche come muoni le fluttuazioni di energia sono molto grandi e spesso sono associate a sciamature quindi parlare di perdita di energia come un processo uniforme e continuo è insensato |
+
+> Si noti la dipendenza (molto approssimativa a causa del log.) $-\frac{dE}{dx} \sim \propto E Z^2$ 
+
+Tipicamente la Bremmstrahlung viene emessa in avanti o comunque a piccoli angoli $\theta \sim1/\gamma=m/E$
+
+| <img src="images/Interazione_radiazione_materia/image-20220220135143452.png" alt="image-20220220135143452" style="zoom: 60%;" /><img src="images/Interazione_radiazione_materia/image-20220220135223580.png" alt="image-20220220135223580" style="zoom: 60%;" /><img src="images/Interazione_radiazione_materia/image-20220220135322598.png" alt="image-20220220135322598" style="zoom:60%;" /> |
+| ------------------------------------------------------------ |
+| A: Spettro della Bremmstrahlung per C e Pb normalizzata per fattore $E_\gamma/Z^2$ |
+| B,C: distribuzione angolare della Bremmstrahlung a diverse energie |
 
 Inoltre quando avviene Bremmstrahlung dobbiamo considerare vari possibili fenomeni:
 
@@ -220,8 +229,6 @@ f_L(\lambda)=\frac{1}{\pi}\int_0^\infty e^{-t ln (t)-\lambda t }\sin (\pi t) dt
 \;\;\Delta E_w=\text{Massimo della distr.}
 $$
 
-
-
 La forma della distribuzione dipende dal parametro $k=\xi/T_{max}$ dove $T_{max}$ è l'energia cinetica massima cedibile a un elettrone e $\xi \propto \rho\frac{Z}{A}\frac{z^2}{\beta^2} \Delta x$  è il fattore moltiplicativo presente nella bethe block quindi essezialmente $\xi \simeq dE/dx$ (almeno concettualmente, nell'andamento)
 
 - **k grande** implica **distribuzione simmetrica (Gaussiana)**
@@ -267,13 +274,15 @@ La distribuzione angolare dell'angolo di scattering medio può essere ben appros
 | :----------------------------------------------------------: |
 | Deviazione standard dell'angolo di scattering nell'approssimazione gaussiana a piccoli angoli (valida al di sopra dei 20MeV) |
 
-<img src="images/Interazione_radiazione_materia/image-20220217030024845.png" alt="image-20220217030024845" style="zoom:50%;" />
+| <img src="images/Interazione_radiazione_materia/image-20220217030024845.png" alt="image-20220217030024845" style="zoom:50%;" /> |
+| :----------------------------------------------------------: |
+| NB: l'angolo ha un segno. Se si considera il valore assoluto dell'angolo la distribuzione cambia |
 
 ### Radiazione Cherenkov
 
 La radiazione Cherenkov avviene quando una particella carica attraversa un mezzo a una velocità maggiore della velocità della luce nello stesso mezzo causando un'onda d'urto luminosa.
 
-Quello che viene prodotto è un cono luminoso con una apertura angolare di $\cos(\theta_c)=\frac{1}{n\beta}$ , questo significa che la luce cherenkov può essere usata per trovare $\beta$ o come threshold in quanto viene emessa solo per $\beta>1/n$
+Quello che viene prodotto è un cono luminoso con una apertura angolare di $\cos(\theta_c)=\frac{1}{n\beta}$ , questo significa che la luce cherenkov può essere usata per trovare $\beta$ (e se si è misurato in qualche altro modo il momento anche la massa) o come threshold in quanto viene emessa solo per $\beta>1/n$
 
 L'energia persa per radiazione cherenkov è solitamente molto bassa e trascurabile (Comunque inclusa nella bethe bloch nelle perdite radiative)
 
@@ -285,9 +294,167 @@ Soprattutto nei detector gassosi possono essere presenti più materiali insieme
 
 Per la lunghezza di radiazione invece $\frac{1}{\rho X_0}|_{\text{eff.}}=\sum_i \frac{1}{\rho_i X_{0_i}}$
 
+------
+
+<div style="page-break-after: always; break-after: page;"></div>
+
 ## Interazione di fotoni
+
+| <img src="images/Interazione_radiazione_materia/image-20220220114414907.png" alt="image-20220220114414907" style="zoom:80%;" /> |
+| :----------------------------------------------------------- |
+| $k_e$: Produzione di coppie nel campo degli elettroni<br />$k_n$: Produzione di coppie nel campo dei nuclei<br />$\sigma_{g.d.r.}$: Interazione fotonucleare<br />Si noti come per materiali leggeri l'effetto compton è dominante per un range molto più ampio di energia e comunque sempre dominante intorno a 1MeV |
+
+Le interazioni principali dei fotoni con la materia sono:
+
+- **Scattering Thomson**: Scattering del $\gamma$ a bassa energia su un elettrone libero. L'onda EM accelera (fa oscillare) la carica che emette radiazione di dipolo (a livello classico la frequenza dell'onda deve essere inferiore al periodo di rotazione classico dell'elettrone intorno al nucleo).
+
+  Sugli $e^-$ corrisponde al limite di bassa energia del compton.
+  A differenza del raylight si ha su corpi non polarizzabili (cariche libere)
+
+- **Scattering Rayleight**: Scattering elastico coerente sugli atomi o molecole. Se la frequenza dell'onda è bassa questa polarizza la materia creando dei dipoli che irraggiano.
+  Dipende principalmente dalla grandezza del corpo su cui scattera, dalla sua polarizzabilità e dalla sua frequenza di risonanza
+
+- **Effetto fotoelettrico**: Il fotone trasferisce tutta l'energia all'atomo che emette un elettrone
+
+- **Effetto compton**: Scattering elastico $\gamma \; e^- \to \gamma \; e^-$
+
+- **Produzione di coppie**: Nel campo elettrico del nucleo
+
+- **Interazioni fotonucleari**: Mai dominanti e presenti solo in range determinati di energia nel gamma.
+  Consistono nell'eccitazione di un nucleone che decadendo emette un protone, un neutrone o un alpha (rilevante nelle supernove).
+  Per determinati materiali questo processo può causare fissione
+
+I fotoni vengono asssorbiti o scatterati con una probabilità proporzionale alla lunghezza percorsa nel mezzo.
+
+Data n la densità del mezzo  e N il numero di fotoni, si ha
+$$
+\text{Coefficiente di assorbimento : }\mu=-\frac{1}{N}\frac{dN}{dx}=n \sigma
+\\
+\text{Cammino libero medio  :  } \lambda=\frac{1}{\mu}=\frac{1}{n\sigma}
+$$
+
+> Si noti che anche in questo caso queste grandezze vengono normalizzate per la densità del materiale
+
+Quindi il numero di fotoni in funzione della penetrazione sarà 
+$$
+N(x)=N_0e^{-\mu x}=N_0e^{-\frac{x}{\lambda}}=N_0e^{-n\sigma x}
+$$
+
+| <img src="images/Interazione_radiazione_materia/image-20220220113210434.png" alt="image-20220220113210434" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Cammino libero medio (normalizzato per la densità) in funzione dell'energia del fotone in diversi materiali |
+
+### Effetto fotoelettrico
+
+Processo $\gamma \; \text{atom} \to \text{atom}^+ \; e^-$ dominante nella regione bassa del KeV.
+
+Poichè accada il fotone deve avere un'energia superiore all'energia di legame dell'elettrone, l'energia che avanza va in energia cinetica dell'elettrone. (il rinculo del nucleo è trascurabile)
+
+La dipendenza della sezione d'urto fotoelettrica è 
+$$
+\sigma_{p.e.} \propto \frac{Z^5}{E_\gamma}
+$$
+Quindi è **fortemente dipendente dal materiale usato**
+
+> In realtà per basse energie la legge di potenza Z varia tra 4 e 5 poichè diventa rilevante la struttura elettronica dell'atomo
+
+| <img src="images/Interazione_radiazione_materia/image-20220220120913778.png" alt="image-20220220120913778" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Inoltre crescendo con l'energia la sezione d'urto (e l'energia cinetica dell' elettrone rilasciato) presenta bruschi picchi dovuti alla possibilità di accedere agli orbitali atomici più interni |
+
+#### Emissione secondaria
+
+Il "buco" lasciato dall'effetto fotoelettrico in uno shell interno viene riempito da un elettrone di uno shell superiore. Questo processo causa l'emissione di altra energia o tramite un fotone o tramite un **elettrone Auger** ovveroun elettrone che scende ad occupare un orbitale più interno causa, tramite l'interazione coulombiana (scambio di un fotone), l'emissione di un elettrone negli orbitali più esterni. 
+
+> L'energia rilasciato da questo processo (sia tramite fotone che emissione auger) è discreta quindi causa linee molto riconoscibili negli spettri.
+>
+> Inoltre la probabilità di emissione di un fotone secondario aumenta con Z mentre quella di un elettrone auger diminuisce con Z
+
+Le emissioni secondarie in generale possono presentare "Artifici" chiamati picchi di uscita. 
+Ad esempio se dopo un'interazione fotoelettrica viene emesso un fotone secondario che esce dal detector l'energia del fotone sarà persa quindi si osserverà un secondo picco con energia pari a quella del fotopicco meno l'energia di transizione tra gli orbitali che hanno generato il fotone secondario. (Per gli auger invece solitamente vengono assorbiti dal detector e contribuiscono al fotopicco)
+
+### Effetto compton
+
+Avviene quando l'energia del fotone incidente è molto maggiore di quella di legame dell'elettrone, in questo libite l'elettrone si può considerare libero.
+
+Può capitare che l'elettrone rimanga legato e tutto l'atomo subisca un rinculo. Questo accade con sempre più probabilità con il calare dell'energia infatti nel limite di bassa energia si ottiene lo scattering Thomson.
+
+Il compton è dominante intorno a 1MeV e la regione in cui domina è tanto più ampia quanto piccolo Z (questo perchè il fotoelettrico va come $Z^5/E_\gamma$ quindi per alti Z la regione in cui domina è maggiore)
+
+> Proprio perchè intorno a 1MeV si ha prevalentemente solo Compton per queste energie è veramente difficile schermare i fotoni a causa della totale assenza di fenomeni di assorbimenti
+
+La sezione d'urto compton su singolo elettrone è indipendente da Z MA al crescere dell'energia sempre più elettroni atomici possono essere considerati quasi liberi quindi la **sezione d'urto compton su un atomo** è
+$$
+\sigma_C^{\text{atom}}=Z\sigma_C
+$$
+
+#### Spalla compton
+
+Il massimo dell'energia cinetica dell'elettrone si ha per il backscattering del fotone. Questo effetto, nello spettro dell'energia cinetica dell'elettrone, è chiamato **compton edge**
+
+| <img src="images/Interazione_radiazione_materia/image-20220220124719776.png" alt="image-20220220124719776" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Il limite massimo dell'energia cinetica dell'elettrone è chiamato compton edge ed è sempre inferiore al fotopicco. |
+
+#### Compton inverso
+
+Ci si riferisce allo stesso processo del compton ma nel caso in cui si abbia uno scattering tra fotoni di bassa energia e elettroni di alta energia.
+
+Questo processo produce fotoni di alta energia ed è rilevante nella produzione di gamma rays astrofisici nell'energia del TeV
+
+### Produzione di coppie
+
+La threshold di produzione di coppie è poco sopra al doppio della massa dell'elettrone $1.02MeV$ (a causa del rinculo del nucleo trascurabile).
+
+La produzione di coppie **è strettamente legata con la bremmstrahlung**
+
+| <img src="images/Interazione_radiazione_materia/image-20220220131152626.png" alt="image-20220220131152626" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| se si disegnano i diagrammi di feynman si nota come la differenza sia unicamente nel riordinamento del grafo |
+
+Quindi anche gli elementi di matrice sono correlati, almeno all'ordine leading e anche tutte le soppressioni dovute allo schermaggio degli elettroni atomici sono uguali a quelle resentui nel caso della bremmstrahlung.
+
+Facendo i calcoli si può scrivere la **lunghezza di assorbimento** per la produzione di coppie in funzione della lunghezza di radiazione per bremmstrahlung
+$$
+\lambda_{\text{pair}}=\frac{1}{n_{\text{atoms}}\sigma_\text{pair}}=\frac{9}{7}X_0
+$$
+Mentre la sezione d'urto è $\sigma_{pair_{nucl}}\propto Z^2$ a causa della somma dei contributi di tutti i nucleoni
+
+**Questo vale solo per la produzione di coppie  in campo nucleare** in quanto il corpo su cui avviene la produzione deve assorbire il rinculo e, mentre il  rinculo del nucleo è trascurabile, quello degli elettroni no quindi ha una threshold più alta
+
+| <img src="images/Interazione_radiazione_materia/image-20220220132317352.png" alt="image-20220220132317352" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Probilità della produzione di coppie in diversi materiali. A queste energie il resto delle interazioni è praticamente completamente compton |
+
+### Recap
+
+Riassumendo la dipendenza per le varie interazioni
+
+<img src="images/Interazione_radiazione_materia/image-20220220132640428.png" alt="image-20220220132640428" style="zoom:67%;" />
+
+| <img src="images/Interazione_radiazione_materia/image-20220220132720070.png" alt="image-20220220132720070" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Zone, in funzione di E e Z, in cui ogni interazione è dominante |
 
 ## Interazioni adroniche
 
+Per gli adroni, oltre agli effetti di ionizzazione già discussi, sono presenti anche interazioni adroniche (tipicamente forti) che possono essere di svariato tipo (elastico, inelastico, di cattura, di fissione, di trasferimento,etc.) ma tipicamente questi processi generano particelle cariche
+
+Come per i fotoni viene introdotto il concetto di lunghezza di assorbimento che dipende solo dai processi inelastici
+
+Per adroni di altissima energia la lunghezza di assorbimento è circa costante $\lambda_a=\frac{1}{n\sigma_{\text{inel}}} \propto A^{-2/3}$ (A massa atomica)
+
+Per alti Z tipicamente la lunghezza di assorbimento è molto più grande della lunghezza di radiazione (questo perchè le interazioni forti hanno range di interazione corto e quindi bassa probabilità), per questo motivo i calorimetri adronici devono essere molto più grandi di quelli elettromagnetici.
+
+E' possibile definire anche una lunghezza di interazione dove si considerano sia i processi elastici che inelastici ma solitamente i processi adronici elastici non trasferiscono molta energia quindi sono irrilevanti e anche le deflessioni causate sono trascurabili.
+
+Per i neutroni le interazioni adroniche sono le uniche possibili quindi diventano molto penetranti
+
 ## Interazione di neutrini
 
+I neutrini interagiscono molto debolmente, sono poco massivi e anche neutri
+
+Le tipiche reazioni cercate sono:
+$\nu+n \to (e,\mu,\tau) +p$ o corrispondente con le antiparticelle
+
+Per 1km di acqua la probabilità di interazione per un neutrino da 200 GeV è $\sim 6 \cdot 10^{-15}$ quindi sono necessari detector enormi con tonnellate di acqua/ghiaccio o scintillatore o grandi sandwitch di convertitore/detector
