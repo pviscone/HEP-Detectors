@@ -1,5 +1,9 @@
 [TOC]
 
+------
+
+<div style="page-break-after: always; break-after: page;"></div>
+
 # Interazione radiazione materia
 
 Il tempo tipico di decadimento delle particelle dipende dal tipo di interazione:
@@ -18,6 +22,10 @@ La lunghezza percorsa da una particella prima di decadere è $l=\beta \gamma c \
 - **Tempo di vita**: Ricostruendo il vertice del decadimento (geometricamente) si può ricavare il tempo in cui è decaduta
 - **Velocità**: Tramite TOF, angolo Cherenkov o dal $\frac{dE}{dx}$ 
 - **Massa**: Ottenibile da $m^2=E^2-p^2$ o da $p=m\beta/\sqrt{1-\beta^2} $
+
+------
+
+<div style="page-break-after: always; break-after: page;"></div>
 
 ## Interazione di particelle cariche
 
@@ -41,7 +49,7 @@ Lo stopping power è definito come il $-dE/dx$ per unità di densità del materi
 
 Queste curve, se non normalizzate per la massa della particella, possono essere utili per fare particle identification poichè ogni particella segue una curva a se
 
-| <img src="images/Interazione_radiazione_materia/image-20220214171429817.png" alt="image-20220214171429817" style="zoom:80%;" /> |
+| <img src="images/Interazione_radiazione_materia/image-20220214171429817.png" alt="image-20220214171429817" style="zoom:70%;" /> |
 | :----------------------------------------------------------: |
 | Plot dello stopping power **per particelle con $M>>m_e$** . Per elettroni e positroni domina Bremstrahlung. <br />Possiamo distinguere 3 zone : <br />zona di scattering elastico, di ionizzazione e di Bremstrahlung |
 
@@ -86,7 +94,7 @@ Alcune osservazioni sulla Bethe-Block (ionizzazione):
 
 Per particelle massive con momenti molto bassi si può osservare il picco di Bragg
 
-| <img src="images/Interazione_radiazione_materia/image-20220214183616196.png" alt="image-20220214183616196" style="zoom:67%;" />La dose non è altro che E/M |
+| <img src="images/Interazione_radiazione_materia/image-20220214183616196.png" alt="image-20220214183616196" style="zoom:55%;" />La dose non è altro che E/M |
 | :----------------------------------------------------------: |
 | Man mano che la particella perde energia lo stopping power aumenta. E' possibile ricostruire l'energia persa in funzione della penetrazione usando l'andamento $\beta^{-2}$ valido a basse energie |
 
@@ -115,7 +123,7 @@ Si nota anche che il $dN/dx$​ non è una delta ma ha una sua larghezza chiamat
 
 Se si esprime l'integrale del range in funzione di $\gamma$ si ha $R=\frac{M}{z^2}f(\gamma_0)$ dove $\gamma_0$ è il $\gamma$ iniziale della particella e $f(\gamma_0)$ è una funzione indipendente dalle proprietà della particella (massa e carica) e dipende solo dal materiale. Quindi il range scala come $M/z^2$ (riferite alla particella)
 
-
+------
 
 ### Particelle poco massive ($e^-$ ed $e^+$)
 
@@ -175,6 +183,8 @@ Inoltre quando avviene Bremmstrahlung dobbiamo considerare vari possibili fenome
 - Effetto LPM: Ad altissime energie (sopra il TeV) la Bremmstrahlung (e la produzione di coppie) è soppressa .
 
   Ad alte energie per energie perse piccole l'interazzione avviene su lunghe distanze. Se questa distanza è maggiore del cammino libero medio (distanza media tra 2 eventi successivi) la prima emissione interferisce con la seconda introducendo causando una soppressione nello spettro dei fotoni
+
+------
 
 ###  Fluttuazioni statistiche
 
@@ -261,6 +271,8 @@ Altri metrodi per eliminare incertezze sono:
 - Escludere gli elettroni deltra dalle misurse (Possibile in cloud/bubble chamber e in layer indipendenti molto sottili di un detector)
 - Usare una media troncata scartando i valori più alti e più bassi (Stima più robusta)
 - Ricostruire l'energia persa dalla particella durante il suo percorso e non solo alla fine (Utile nella misura del momento.)
+
+------
 
 ### Multiplo scattering
 
