@@ -526,9 +526,126 @@ f_0(\vec{v})=C \exp(-Av^2)
 $$
 
 - **Approssimazione di rilassamento**: Assumiamo che dopo un'interazione il sistema impieghi un *tempo di rilassamento* $\tau$ per tornare all'equilibrio. 
-  Sotto questa assunzione vale $\partial_tf=\partial_tf|_\text{collision}=\frac{f-f_0}{\tau}$ dove $f_0$ è la soluzione nel caso di equilibtio. 
+  Sotto questa assunzione vale $\partial_tf|_\text{collision}=-\frac{f-f_0}{\tau}$ dove $f_0$ è la soluzione nel caso di equilibtio. 
   La soluzione sarà:
   $$
-  f(t)=f_0+(f-f_0)e^{-\frac{t}{\tau}} 
+  f(t)=f_0+(f-f_0)e^{-\frac{t}{\tau}}
   $$
   Questa approssimazione è *molto utile nei detector* che sono sistemi in qui l'equilibrio è ripristinato dopo un tempo caratteristico
+  
+  - **Campo elettrico costante**: In questa approssimazione possiamo considerare la presenza di un campo elettrico costante: 
+  
+    - Il 1° termine è nullo, stabilità implica indipend. temporale
+    - Il 2° termine è nullo
+    - Il 3° termine è dato da $\frac{dv}{dt}=\frac{qE}{m}$
+  
+    Un'altra approssimazione che si può fare è $\nabla_v f \sim \nabla_vf_0$
+  
+    Se esprimiamo tutto in funzione dell'energia cinetica T otteniamo
+    $$
+    f= f_0-eQ\tau v_3\partial_Tf_0
+    $$
+    Ovviamoente la distribuzione è anisotropa e preferisce la direzione del campo E
+
+## Velocità di Drift
+
+La **velocità di drift** è la velocità media (vettoriale) delle cariche
+$$
+\vec{v_D}=\int \vec{v} f(\vec{v})d^3\vec{v}
+$$
+Questa velocità è non nulla solo se f presenta una asimmetria nello spazio degli impulsi.
+Conviene rappresentare questa asimmetria in termini di distribuzioni angolari e quindi esprimendo le velocità in coordinate sferiche.
+
+Esprimendo l'integrale in funzione dell'energia cinetica otteniamo 
+$$
+\vec{v_d}=\frac{2qE}{3m}<\tau>=\mu E
+\\
+\text{Mobilità: }\mu=\frac{2q}{3m} <\tau>\; :
+\\
+\text{Cammino libero medio: }\lambda=\tau v=\frac{1}{n\sigma}
+$$
+
+> Per le misture vale $\frac{1}{\mu}=\sum_i \frac{f_i}{\mu_i}$ dove $f_i$ sono le abbondanze. 
+> Questa legge vacilla quando iniziano a esserci importanti scambi di carica tra gli ioni e le molecole del gas con diversa mobilità
+
+Il tempo medio $\tau$ che intercorre tra 2 successive collisioni è dato dalle sezioni d'urto in gioco ed è esprimile in funzione del cammino libero medio.
+**NB:** $\tau$ non è il tempo di rilassamento come definito prima ma è il tempo di collision. Ad ogni collisione le velocità sono in media distribuite isotropicamente e l'energia guadagnata dalla particella è dispersa, quindi il sistema torna all'equilibrio
+
+La mobilità è fortemente dipendente dal campo E in quanto lo sono anche tutte le sezioni d'urto coinvolte nelle collisioni. Questo causa fenomeni di saturazione (o addirittura di diminuzione nei gas) della velocità di drift per campi elettrici molto alti.
+
+> Nel caso sia presente anche un campo B non si hanno cambiamenti nella velocità di drift e si ha una riduzione della diffusione: le cariche percorrono archi di curve
+>
+> <img src="images/Interazione_radiazione_materia/image-20220222150553652.png" alt="image-20220222150553652" style="zoom:60%;" />
+>
+> L'angolo formato dalla traccia con il campo elettrico sarà $\tan(\alpha_L)=\frac{v^B_x}{v^E_z}=w\tau$ dove z è la direzione del campo elettrico e $\omega=qB/m$ è la frequenza di ciclotrone.
+> $\alpha_L$ è detto **Angolo di Lorentz**
+
+## Diffusione
+
+Dall'equazione di continuità e di diffusione della corrente (legge di Fick) si ottiene l' equazione di diffusione
+
+<img src="images/Interazione_radiazione_materia/image-20220222163017978.png" alt="image-20220222163017978" style="zoom:67%;" />
+
+dove D è detto **coefficiente di diffusione ** e vale $D=\frac{<\lambda v>}{3}$
+
+Dopo aver percorso un distanza x la dispersione della carica avrà una larghezza $\sigma_x=\sqrt{2Dt}=\sqrt{\frac{2\epsilon_kx}{qE}}$ dove $\epsilon_k$ è l'energia termica (che all'equilibrio termico è $\epsilon_k=kT$)
+
+Per la relazione di *Nernst-Townsend-Einstein* vale $\epsilon_k=\frac{qD}{\mu} \geq kT$ (questa relazione non vale in presenza di campi esterni e l'uguaglianza vale all'equilibrio termico)
+
+> L'argon ha una grande dispersione in quanto non c'è nulla che limiti i moti vibrazionali e rotazionali delle molecole. Quello che si fa di solito è usare l'argon in misture con altri gas che sono vicini al limite termico come metano,isobutano, co2, etc.
+>
+> (L'argon va usato sia poichè è inerte sia perchè essendo un nucleo più pesante Z=16 favorisce la ionizzazione)
+
+## Moto delle cariche nei gas
+
+### Velocità di drift
+
+- **Ioni**: A causa della loro massa hanno una velocità di drift molto minore della loro velocità termica quindi si possono considerare all'equilibrio.
+  La mobilità è praticamente indipendente dal campo elettrico in quanto la sezione d'urto dei processi coinvolti è abbastanza costante con l'energia quindi vale $\epsilon_k=kT$ e $n=p/kT\implies \lambda=kT/(p\sigma)$.
+
+  Il moto degli ioni ha un ruolo importante nella formazione del segnale all'anodo (dove avviene la moltiplicazione degli elettroni)
+
+- **elettroni**: Le sezioni d'urto che coinvolgono gli elettroni sono fortemente energy dependent a causa della scarsa massa degli elettroni. 
+  Inoltre sono presenti anche processi inelastici che causano delle perdite di carica (fortemente energy dependent, dipendono dalle linee di assorbimento del materiale).
+
+  - Le molecole pesanti tendono a spostare la distribuzione id energia a valori più bassi (a causa dei vari moti vibrazionali e rotazionali della molecola).
+
+  - Per campi elettrici molto alti la velocità di drift (e quindi la mobilità) tende a diminuire
+
+    <img src="images/Interazione_radiazione_materia/image-20220222172819847.png" alt="image-20220222172819847" style="zoom:67%;" />
+
+  | <img src="images/Interazione_radiazione_materia/image-20220222172045918.png" alt="image-20220222172045918" style="zoom:67%;" /> |
+  | :----------------------------------------------------------: |
+  | Sezioni d'urto in funzione dell'energia.<br />Si noti che per molecole semplici si ha per lo più solo scattering elastico.<br />Nelle regioni di scattering elastico la mobilità cresce molto all'aumentare dell'energia |
+
+  Aggiungere metano causa una diminuzione nella distribuzione di energia degli elettroni quindi le sezioni d'urto diminuiscono e la velocità di drift aumenta
+
+  > <img src="images/Interazione_radiazione_materia/image-20220222172607946.png" alt="image-20220222172607946" style="zoom:67%;" />
+  >
+  > Facendo di nuovo l'esempio dell'argon si può notare come aumentare la frazione di metano o etano implichi un aumento significativo nella velocità di drift
+
+### Diffusione
+
+Nei gas si è spesso al di fuori del limite termico e la dispersione è un problema serio che va moderato
+
+| <img src="images/Interazione_radiazione_materia/image-20220222180147403.png" alt="image-20220222180147403" style="zoom:50%;" /> |
+| :----------------------------------------------------------: |
+| A: Energia caratteristica per diversi gas in funzione del campo elettrico. (Il limite termico si ha per campo elettrico nullo) |
+| B: Dispersione per centimetro percorso in vari gas.<br />Si noti come una carica dell'argon, dopo aver percorso 1cm, ha già 1mm di dispersione circa |
+
+| <img src="images/Interazione_radiazione_materia/image-20220222180339979.png" alt="image-20220222180339979" style="zoom:50%;" /> |
+| :----------------------------------------------------------: |
+| La dispersione non è isotropa e spesso bisogna tenere conto delle differenze tra quelle longitudinali e quelle trasversali (quindi abbiamo due coefficienti di dispersione $D_T$ e $D_L$)<br />Addirittura in presenza di campo B l'anisotropia è così forte che D va scritto in forma tensoriale |
+
+## Moto delle cariche nei semiconduttori
+
+### Velocità di drift
+
+### Diffusione
+
+## Formazione del segnale
+
+
+
+# Rumore
+
