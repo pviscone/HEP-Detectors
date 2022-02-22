@@ -479,3 +479,56 @@ Per 1km di acqua la probabilità di interazione per un neutrino da 200 GeV è $\
 
 # Formazione del segnale
 
+Tipicamente i detector sfruttano le cariche generate dalle paticelle che ionizzano la materia e sfruttano campi elettrici e magnetici per spostarle.
+
+Nel detector possiamo distinguere 2 tipi di movimenti:
+
+- **Disordinati**: con una distribuzione di velocità (Maxwell-Boltzmann nel limite classico. Nei semi conduttori può diventare importante l'effetto quantistico) data dall'energia termica che causa una dispersione della carica. Il campo elettrico può cambiare questa distribuzione
+- **Moto di drift**: causato dalla presenza di campi elettrici e magnetici
+
+La **velocità di drift** è data dall'equilibri dell'accelerazione della carica e le collisioni con gli altri atomi. 
+Solitamente $|v_d|\ll <v>$ dove \<v\> è la media della velocità termica
+
+## Equazione del trasporto di Boltzmann
+
+L'**equazione di boltzmann** descrive l'evoluzione di posizione e velocità di una carica in un mezzo in funzione delle forze esterne. 
+
+Consideriamo una nuvola di cariche in un mezzo con una distribuzione nello spazio delle fasi f (dp è un elemento infinitesimo dello spazio delle fasi)
+
+<img src="images/Interazione_radiazione_materia/image-20220222095029391.png" alt="image-20220222095029391" style="zoom:60%;" />
+
+Alcune osservazioni:
+
+- $\partial_t f=0$ nel caso non ci sia dipendenza esplicita della densità dello sp. delle fasi dal tempo. 
+  Quindi *è nullo nel caso stazionario*
+
+- 2° termine descrive evoluzione nella posizione (diffusione)
+
+- 3° termine descrive evoluzione nella velocità
+
+- $\partial_tf|_\text{coll}$ è detto integrale di collisione (infatti eq. Boltzmann è un'equazione integro-differenziale). In questo termine entrano tutte le possibili sezioni d'urto a cui le cariche sono soggette
+
+- | More Actions<img src="images/Interazione_radiazione_materia/image-20220222095945054.png" alt="image-20220222095945054" style="zoom:60%;" /> |
+  | ------------------------------------------------------------ |
+  | Integrale di collisione nel caso di scattering elastico $1+2\to3+4$.<br />W è la probabilità che la particella 1 e 2 che si incontrano al tempo t nel punto r scatterino in una seconda coppia con velocità v e $v_3$ e viceversa (W è simmetrica per scambio delle coppie) |
+  | <img src="images/Interazione_radiazione_materia/image-20220222100641937.png" alt="image-20220222100641937" style="zoom:67%;" /> |
+  | A: Il termine positivo è dato dall'aumento di densità causato all'aumento della velocità a causa di una collisione entrante che fa accelerare la particella |
+  | B: Il termine negativo rappresenta una  diminuzione della densità causata dalla collisione della particella con altri atomi che ne causa una perdità di energia |
+
+### Approssimazioni
+
+Alcune approssimazioni utili che rendono l'equazione analiticamente risolvibile sono:
+
+- **Equilibrio (Maxwell-boltzmann)**: Caso in cui non ci sono forze e f(r,v,t)=f(v). In questo caso l'integrale di collisione è nullo.
+
+$$
+f_0(\vec{v})=C \exp(-Av^2)
+$$
+
+- **Approssimazione di rilassamento**: Assumiamo che dopo un'interazione il sistema impieghi un *tempo di rilassamento* $\tau$ per tornare all'equilibrio. 
+  Sotto questa assunzione vale $\partial_tf=\partial_tf|_\text{collision}=\frac{f-f_0}{\tau}$ dove $f_0$ è la soluzione nel caso di equilibtio. 
+  La soluzione sarà:
+  $$
+  f(t)=f_0+(f-f_0)e^{-\frac{t}{\tau}} 
+  $$
+  Questa approssimazione è *molto utile nei detector* che sono sistemi in qui l'equilibrio è ripristinato dopo un tempo caratteristico

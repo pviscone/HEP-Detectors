@@ -6,6 +6,7 @@
 - Per stimare energia persa usare moda o mediana della landau?
 - Cherenkov incluso nella bethe bloch?
 - Per adroni come comparare le perdite per interazione elettromagnetiche (dE/dx) con quelle nucleari (dove si ha solo lunghezza di assorbimento)
+- Quanto importante la temperatura nei rivelatori a gas?
 
 # Impostazioni typora (snippet tramite espanso)
 

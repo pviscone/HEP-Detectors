@@ -21,8 +21,16 @@ matches:
     replace: "\\beta"
 
   - trigger: "\\f"
-    replace: "\\frac{}"
+    replace: "\\frac{"
 
+  - trigger: "\\dd"
+    replace: "\\partial"
+  - trigger: "\\nn"
+    replace: "\\nabla"
+  - trigger: "\\v"
+    replace: "\\vec{"
+  - trigger: "\\tt"
+    replace: "\\text{"
   # Dates
   - trigger: ":today_date"
     replace: "{{mydate}}"
