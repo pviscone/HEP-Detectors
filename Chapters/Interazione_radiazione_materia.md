@@ -493,7 +493,7 @@ Solitamente $|v_d|\ll <v>$ dove \<v\> è la media della velocità termica
 
 L'**equazione di boltzmann** descrive l'evoluzione di posizione e velocità di una carica in un mezzo in funzione delle forze esterne. 
 
-Consideriamo una nuvola di cariche in un mezzo con una distribuzione nello spazio delle fasi f (dp è un elemento infinitesimo dello spazio delle fasi)
+Consideriamo una nuvola di cariche in un mezzo con![image-20220223190058759](images/Interazione_radiazione_materia/image-20220223190058759.png) una distribuzione nello spazio delle fasi f (dp è un elemento infinitesimo dello spazio delle fasi)
 
 <img src="images/Interazione_radiazione_materia/image-20220222095029391.png" alt="image-20220222095029391" style="zoom:60%;" />
 
@@ -535,7 +535,7 @@ $$
   
   - **Campo elettrico costante**: In questa approssimazione possiamo considerare la presenza di un campo elettrico costante: 
   
-    - Il 1° termine è nullo, stabilità implica indipend. temporale
+    - ![image-20220223190059110](images/Interazione_radiazione_materia/image-20220223190059110.png![image-20220223190059764](images/Interazione_radiazione_materia/image-20220223190059764.png)Il 1° termine è nullo, stabilità implica indipend. temporale
     - Il 2° termine è nullo
     - Il 3° termine è dato da $\frac{dv}{dt}=\frac{qE}{m}$
   
@@ -565,7 +565,7 @@ $$
 \text{Cammino libero medio: }\lambda=\tau v=\frac{1}{n\sigma}
 $$
 
-> Per le misture vale $\frac{1}{\mu}=\sum_i \frac{f_i}{\mu_i}$ dove $f_i$ sono le abbondanze. 
+> Per le misture vale $\frac{1}{\mu}=\sum_i \frac{f_i}{\mu_i}$ dove $f_i$ sono le ab![image-20220223190100045](images/Interazione_radiazione_materia/image-20220223190100045.png)b![image-20220223190100391](images/Interazione_radiazione_materia/image-20220223190100391.png)ondanze. 
 > Questa legge vacilla quando iniziano a esserci importanti scambi di carica tra gli ioni e le molecole del gas con diversa mobilità
 
 Il tempo medio $\tau$ che intercorre tra 2 successive collisioni è dato dalle sezioni d'urto in gioco ed è esprimile in funzione del cammino libero medio.
@@ -639,9 +639,40 @@ Nei gas si è spesso al di fuori del limite termico e la dispersione è un probl
 
 ## Moto delle cariche nei semiconduttori
 
+La massa (effettiva) delle lacune non è perfettamente definita ma p comparabile a quella degli elettroni quindi il comportamento delle cariche positive è totalmente diverso da quello degli ioni nei gas.
+
 ### Velocità di drift
 
+Lo scattering nel reticolo, prevalentemente dovuto alle impurità, è molto diverso reispetto a quello nei gas (quindi cambia l'integrale di collisione) e le perdite di energia in fononi  può essere molto rilevante
+
+| <img src="images/Interazione_radiazione_materia/image-20220223184712151.png" alt="image-20220223184712151" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Mobilità in funzione della temperatura per diverse densità di doping. <br />Nel caso di temperature moltobasse la mobilità è molto alta, per questo motivo si costruiscono rivelatori criogenici<br />Nota che la curva APS significa "acustic phono scattering" |
+
+Anche qui è presente un effetto di **saturazione**: la velocità di drift cresce con il campo elettrico fino ad arrivare a una saturazione e, in alcuni casi, anche a una diminuzione per campi elettrici molto alti (a causa di scattering inelastici con fononi di più alta energia)
+
+| <img src="images/Interazione_radiazione_materia/image-20220223185948941.png" alt="image-20220223185948941" style="zoom: 80%;" /><img src="images/Interazione_radiazione_materia/image-20220223190024373.png" alt="image-20220223190024373" style="zoom: 67%;" /> |
+| :----------------------------------------------------------: |
+| A: Mobilità di elettroni e cariche in funzione del campo elettrico nel silicio a temperatura ambiente |
+| B: Velocità di drift in funzione del campo elettrico. Si noti che prima della saturazione la velocità di drift è proporzionale al campo (slope $\simeq1$) |
+
+> Nei semiconduttori è possibile arrivare a campi elettrici molto maggiori visto che le differenze di potenziale sono applicate su scale molto più piccole (microscopiche), quindi non c'è bisogno di arrivare a voltaggi esagerati come nei rivelatori a gas
+
+Una buona descrizione della velocità di drift può essere data da:
+$$
+v_d=\mu(E) E =\frac{\mu_0 E}{[1+(\frac{\mu_0 E}{v_{\text{sat}}})^\beta]^{^{1/\beta}}}
+$$
+dove $\mu_0$ è la mobilità a basso campo, $v_{\text{sat}}$ è la velocità di saturazione e $\beta$ è un parametro empirico (genericamente diverso per elettroni e lacune) con un valore tra 1 e 2
+
+Alcuni dei numeri più frequenti riguardano:
+
+- **silicio**: $\mu_n=1450 cm^2/(Vs) \; ; \; \mu_p=500 cm^2/(Vs)$ (fattore 3)
+
+Nei gas la mobilità era dell'ordine di $10 cm^2/(Vs)$ per gli ioni e $10^4 cm^2/(Vs)$ per gli elettroni
+
 ### Diffusione
+
+Come nel caso degli ioni nei gas, nei semiconduttori si è vicini al limite termico quindi vale approssimativamente $\epsilon_k=qD/\mu=kT$ (ovviamente si ha un D e un $\mu$ diverso per elettroni e lacune)
 
 ## Formazione del segnale
 
