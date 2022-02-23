@@ -676,7 +676,147 @@ Come nel caso degli ioni nei gas, nei semiconduttori si è vicini al limite term
 
 ## Formazione del segnale
 
+ Quando la carica si avvicina a un elettrodo su esso viene indotta una carica del segno opposto . Mettendo l'elettrodo a possiamo far fluire una corrente
 
+> NB: non è la collezione della carica a formare il segnale ma la carica indotta. Quando la caricha prodotta dalla ionizzazione viene collezionata dall'elettrodo  il segnale cessa di esistere
+
+### Weighting field
+
+Consideriamo una carica q che si muove in un sistema di 2 elettrodi
+
+<img src="images/Interazione_radiazione_materia/image-20220223201749719.png" alt="image-20220223201749719" style="zoom:67%;" />
+
+La differenza di potenziale tra i due elettrodi induce una carica Q e -Q su di essi. Data la capacità del sistema si ha $Q=CV$.
+
+- Una carica in moto tra gli elettrodi induce una carica addizionale e il campo elettrico fa un lavoro $ dW_q=q \vec{E_0} d\vec{r} $
+
+> Dal lavoro del campo la carica acquista energia cinetica che viene dissipata nelle collisioni. In quetso caso è rilevante solo l'energia che il campo elettrico degli elettrodi fornisce a prescindere dalla dissipazione di energia della carica
+
+- Questo lavoro deve essere fornito o dal campo ($dW_E$) o dalla sorgente ($dW_V=dQ\: V +Q dV=dQ\: V$ poiche V costante).
+  Per conservazione dell'energia vale
+
+$$
+dW_E+dW_V+dW_q=0
+$$
+
+> Convenzione: dQ negativa se una carica negativa e spostata nella sorgente (o se una carica positiva è rimossa dalla sorgente)
+
+- L'energia del campo nel volume $\tau$ è $W_E=\frac{1}{2}\epsilon \epsilon_0 \int_\tau \vec{E}^2 d\tau$
+
+- Sfuttando il principio di sovrapposizione scriviamo il campo come somma di quello generato dal passaggio della carica e quello degli elettrodi $\vec{E}=\vec{E_0}+\vec{E_q}$
+
+- Il lavoro sulla carica q verrà fatto da $E_0$ (come scritto sopra) mentre $E_q$ non contribuisce al lavoro
+
+- Sfruttiamo il principio di sovrapposizione anche con i potenziali $\phi=\phi_0+\phi_q$ . Per $\phi_0$ le condizioni al contorno sono date dai valori di potenziale sugli elettrodi mentre per $\phi_q$ vale $\phi_q|_\partial=0$
+
+- Le equazioni di Poisson/Laplace saranno
+  $$
+  \nabla^2\phi_0=0
+  \\
+  \nabla^2\phi_q=-\frac{q}{\epsilon \epsilon_0}\delta(\vec{r}-\vec{r_q})
+  \\
+  \vec{E_i}=-\vec{\nabla}\phi_i
+  $$
+
+- Anche il lavoro è separabile in due componenti (per il teorema di Green) $dW_E=dW_{E_q}+dW_{E_0}$.
+  Se assumiamo che il campo $E_0$ è statico e che $E_q$ non fa lavoro (nemmeno scambiando energia con la sorgente che è a V costante) allora vale $dW_E=0$
+
+- Quindi si ha
+  $$
+  dW_q+dW_V=q\vec{E_0} d\vec{r}+dQ \: V=0 \implies 
+  \\
+  \implies dQ \: V = -q\vec{E_0} d\vec{r}
+  $$
+  Che significa che il lavoro sulla carica q è fornito dalla sorgente 
+
+- Il campo $E_0$ dipende dalla geometria ma il suo valore assoluto dipende da proporzionalmente da V, quindi il rapporto $E_0/V$ è indipendente da V.
+
+- Per semplicità poniamo V=1 e definiamo i campi/potenziali di weighting come $\phi_w=\phi_0/V$ e $\vec{E_w}=-\vec{\nabla}\phi_w$. (potenziale di weighting è privo di dimensioni e il campo è l'inverso di una lunghezza)
+
+- La carica che genera il segnale è $dQ=-q\vec{E_w}d\vec{r}$
+
+- Poichè $d\vec{r}/dt=\vec{v_D}$ (velocità di drift) possiamo esprimere la corrente come
+  $$
+  i_s=-\frac{dQ}{dt}=q\vec{E_w}\vec{v_D}
+  $$
+  In generale la direzione della velocità di drift può essere diversa da quella del campo di weighting
+
+> NB: abbiamo ignorato la presenza di campi magnetici, cariche di polarizzazione o di altre densità di cariche all'interno del volume
+
+### Teorema di Shockley-Ramo
+
+Consideriamo un arrangiamento di k elettrodi con potenziali $V_1,... , V_k$
+
+- Per sovrapposizione $\phi_0 = \sum_i^k\phi_i$ con $\phi_i=V_i$ sull'elettrodo i-esimo e 0 altrove
+- Definiamo il potenziale di weighting come $\phi_{w,i}=\phi_i/V_i$, ognuno di questi risolve l'eq. di Laplace
+- Generalizzando quanto visto sopra si ha $i_{S,i}=q\vec{E}_{w,i}\vec{v}_D$
+
+> - La velocità di drift dipende dal campo elettrico dotale (comprese le polarizzazioni dei materiali) $\vec{v}_D=\mu \vec{E}$
+> - Il weighting field rappresenta l'accoppiamento di un punto da ogni elettrodo calcolato dall'eq. di Laplace
+> - Se la carica viene prodotta molto vicino a un elettrodo il segnale su quello non sarà vista e allo stesso modo la carica indotta sarà quasi nulla
+> - La mobilità domina quindi normalmente domina il segnale degli elettrondi ma sa è presente moltiplicazione nei pressi dell'anodo domina il segnale degli ioni che devono attraversare tutto il detector per arrivare al catodo
+
+### Esempi
+
+#### Camere a ionizzazione
+
+Consideriamo due elettrodi a distanza d siemipi da del gas e una carica che viene prodotta per ionizzazione a distanza $x_0$ da un elettrodo
+
+<img src="images/Interazione_radiazione_materia/image-20220223210231074.png" alt="image-20220223210231074" style="zoom:67%;" />
+
+Il campo è $E=-\frac{V}{d} \;\hat{x}$ quindi il campo di weighting è $E_w=-\frac{1}{d}\hat{x}$ e quindi la corrente generata da elettroni e ioni è
+$$
+i_s^\pm=-\frac{q^\pm}{d}\vec{v}_D^\pm \; \hat{x}
+\\
+T^-=\frac{d-x_0}{{v}_D^-} \; ; \; T^+=\frac{x_0}{{v}_D^+}
+$$
+dove $T^\pm$ sono le durate dei due segnali (ovvero il tempo che le cariche ci mettono ad arrivare agli elettrodi)
+
+| <img src="images/Interazione_radiazione_materia/image-20220223211327802.png" alt="image-20220223211327802" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Segnale della corrente misurata agli elettrodi. <br />In questo caso il rapporto tra le velocità di drift è posto a 1/3 ma tipicamente è 1/1000 |
+
+Si può anche misurare il voltaggio invece della corrente. 
+Per farlo basta inserire in una resistenza con la ionization chamber che fa da condensatore. Il tempo RC  del cirrcuito deve essere maggiore del tempo di drift
+
+| <img src="images/Interazione_radiazione_materia/image-20220223212101007.png" alt="image-20220223212101007" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+
+Se invece di avere una signola carica prodotta abbiamo una linea lungo il quale vengono prodotte le cariche (traccia della particella) bisogna sommare i diversi contributi
+
+| <img src="images/Interazione_radiazione_materia/image-20220223212235264.png" alt="image-20220223212235264" style="zoom: 80%;" /> | A: Voltaggi misurati per singola carica prodotta<br />B: Somma dei contributi per una line di cariche |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+#### Contatori proporzionali
+
+<img src="images/Interazione_radiazione_materia/image-20220223212504142.png" alt="image-20220223212504142" style="zoom:67%;" />
+
+In simmetria cilindrica il campo di weighting è $\vec{E}_w=\frac{1}{r}\frac{1}{\ln(b/a)} \; \hat{r}$ dove b e a dono il raggio di anodo e catodo
+
+Dalla dipendenza $1/r$ ne consegue che il segnale è dominato dal modo vicino all'anodo.
+Vicino all'anodo avviene moltiplicazione di carica per un fattore $10^3-10^6$. 
+
+Questo significa che il segnale è dominato dal moto degli ioni prodotti dalla moltiplicazione che attraversano tutta la distanza che va dall'anodo al catodo
+
+| <img src="images/Interazione_radiazione_materia/image-20220223213221551.png" alt="image-20220223213221551" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| La forma del segnale è principalmene stabilita dal circuito di lettura e del suo tempo caratteristico |
+
+#### Detector a semiconduttore
+
+Nei semiconduttori il campo elettrico non è costante a causa della presenza di molte cariche spaziali (soprattutto nella depleted zone)
+
+<img src="images/Interazione_radiazione_materia/image-20220223213733948.png" alt="image-20220223213733948" style="zoom:80%;" />
+
+Quindi in questo caso la forma dei segnali è molto più complicata ma sono essenzialmente sezioni di esponenziale (poichè il campo elettrico è lineare in funzione della posizione nella depletion zone)
+
+<img src="images/Interazione_radiazione_materia/image-20220223213850670.png" alt="image-20220223213850670" style="zoom:67%;" />
+
+> Quando si hanno elettrodi segmentati (es. delle strip) anche se la carica verrà collezionata da un elettrodo anche gli altri vicini vedranno un segnale a causa del moto della carica
+>
+> <img src="images/Interazione_radiazione_materia/image-20220223214312686.png" alt="image-20220223214312686" style="zoom:67%;" />
+>
+> (Sulla stri 2 la corrente è negativa perchè vicino alla strip il campo di weighting cambia segno)
 
 # Rumore
 
