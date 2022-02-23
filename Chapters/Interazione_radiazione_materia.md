@@ -821,3 +821,33 @@ Quindi in questo caso la forma dei segnali è molto più complicata ma sono esse
 
 # Rumore
 
+| <img src="images/Interazione_radiazione_materia/image-20220223230311045.png" alt="image-20220223230311045" style="zoom:67%;" /> |
+| :----------------------------------------------------------: |
+| Tipico segnale osservato in uscita di un detector.<br />Il tempo di rise dipende principalmente dalle caratteristiche del rivelatore ma quello di rilassamento principalmente dall'elettronica.<br />Volendo si può studiare anche la carica accumulata considerando l'area del segnale |
+
+> **undershoot**: Quando si hanno segnali molto veloci in risalit il segnale può avere un picco che va sopra lo 0. 
+> In questo caso non si può usare l'area del segnale per studiare la carica collezionata
+
+| <img src="images/Interazione_radiazione_materia/image-20220223230709058.png" alt="image-20220223230709058" style="zoom: 50%;" /> |
+| :----------------------------------------------------------: |
+|                   Tipica catena di lettura                   |
+
+Per lo studio del rumore facciamo un **assunzione di ergodicità** ovvero che $<g(x)>=lim_{T\to \infty} \int_0^T g(x(t))dt$. In questo modo possiamo usare le misure fatte su $x(t)$
+
+Alcune quantità e relazioni importanti sono;
+
+- **Autocorrelazione** $\phi(\tau)=\overline{X(t)X(t+\tau)}$:
+  - E' indipendente da t poichè consideriamo il processo stazionario
+  - $\phi(0)=Var(X)$
+  - Se $\phi(\tau)\propto \delta(\tau)$ siamo in presenza di **rumore bianco**
+- **Densità spettrale** $S_x(f)=lim_{T\to \infty}2T\; \overline{a_na_n^*}|_{n=fT}$ dove gli $a_n $ sono i coefficienti della serie di Fourier.
+  - Questa quantità è legata alla varianza del segnale per unità di frequenza. Più precisamente vale $S_x(f)df=\overline{x_n^2}$
+  - Legata alla funzione di autocorrelazione tramite una trasformata di Fourier
+  - Dimensioni: $V^2/Hz$ oppure $A^2/Hz$
+  - Spesso si usa la sua radice (ovvero la amplitude spectral density)
+
+## Sorgenti di rumore
+
+- **Rumore termico (Jhonson)**: Dovuto all'agitazione termica delle cariche ai capi di una resistenza
+
+  E' un rumore bianco con PSD $S_V(f)=4kTR$ dove R è la resistenza
