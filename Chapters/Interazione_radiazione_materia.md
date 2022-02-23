@@ -493,7 +493,7 @@ Solitamente $|v_d|\ll <v>$ dove \<v\> è la media della velocità termica
 
 L'**equazione di boltzmann** descrive l'evoluzione di posizione e velocità di una carica in un mezzo in funzione delle forze esterne. 
 
-Consideriamo una nuvola di cariche in un mezzo con![image-20220223190058759](images/Interazione_radiazione_materia/image-20220223190058759.png) una distribuzione nello spazio delle fasi f (dp è un elemento infinitesimo dello spazio delle fasi)
+Consideriamo una nuvola di cariche in un mezzo con una distribuzione nello spazio delle fasi f (dp è un elemento infinitesimo dello spazio delle fasi)
 
 <img src="images/Interazione_radiazione_materia/image-20220222095029391.png" alt="image-20220222095029391" style="zoom:60%;" />
 
@@ -535,12 +535,13 @@ $$
   
   - **Campo elettrico costante**: In questa approssimazione possiamo considerare la presenza di un campo elettrico costante: 
   
-    - ![image-20220223190059110](images/Interazione_radiazione_materia/image-20220223190059110.png![image-20220223190059764](images/Interazione_radiazione_materia/image-20220223190059764.png)Il 1° termine è nullo, stabilità implica indipend. temporale
+    - Il 1° termine è nullo, stabilità implica indipend. temporale
+    
     - Il 2° termine è nullo
     - Il 3° termine è dato da $\frac{dv}{dt}=\frac{qE}{m}$
-  
+    
     Un'altra approssimazione che si può fare è $\nabla_v f \sim \nabla_vf_0$
-  
+    
     Se esprimiamo tutto in funzione dell'energia cinetica T otteniamo
     $$
     f= f_0-eQ\tau v_3\partial_Tf_0
@@ -565,7 +566,7 @@ $$
 \text{Cammino libero medio: }\lambda=\tau v=\frac{1}{n\sigma}
 $$
 
-> Per le misture vale $\frac{1}{\mu}=\sum_i \frac{f_i}{\mu_i}$ dove $f_i$ sono le ab![image-20220223190100045](images/Interazione_radiazione_materia/image-20220223190100045.png)b![image-20220223190100391](images/Interazione_radiazione_materia/image-20220223190100391.png)ondanze. 
+> Per le misture vale $\frac{1}{\mu}=\sum_i \frac{f_i}{\mu_i}$ dove $f_i$ sono le abbondanze. 
 > Questa legge vacilla quando iniziano a esserci importanti scambi di carica tra gli ioni e le molecole del gas con diversa mobilità
 
 Il tempo medio $\tau$ che intercorre tra 2 successive collisioni è dato dalle sezioni d'urto in gioco ed è esprimile in funzione del cammino libero medio.
