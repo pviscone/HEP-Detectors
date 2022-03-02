@@ -840,14 +840,57 @@ Alcune quantità e relazioni importanti sono;
   - E' indipendente da t poichè consideriamo il processo stazionario
   - $\phi(0)=Var(X)$
   - Se $\phi(\tau)\propto \delta(\tau)$ siamo in presenza di **rumore bianco**
+  
 - **Densità spettrale** $S_x(f)=lim_{T\to \infty}2T\; \overline{a_na_n^*}|_{n=fT}$ dove gli $a_n $ sono i coefficienti della serie di Fourier.
-  - Questa quantità è legata alla varianza del segnale per unità di frequenza. Più precisamente vale $S_x(f)df=\overline{x_n^2}$
+  - Questa quantità è legata alla varianza del segnale per unità di frequenza. Più precisamente vale $S_x(f)df=\overline{x_n^2}$ (che è la varianza se segnale  stazionario a media nulla)
+  
   - Legata alla funzione di autocorrelazione tramite una trasformata di Fourier
+  
   - Dimensioni: $V^2/Hz$ oppure $A^2/Hz$
+  
   - Spesso si usa la sua radice (ovvero la amplitude spectral density)
+  
+  - Dato un segnale in input X, una funzione di trasferimento g(f) e un segnale di output Y vale:
+    $S_Y(f)=|g(f)|^2 S_X(f)$ .
+  
+    Per misurare $S_X$ in genere si usa un amplificatore molto piccato intorno una frequenza $f_0$ e s i usa approssimazione $\overline{Y^2}=\int_0^\infty |g(f)|^2 S_X(f)df\sim S_X(f_0)|g(f_0)|^2\int_0^\infty |\frac{g(f)}{g(f_0)}|^2  \implies$
+  
+    $\implies S_X(f_0)=\frac{\overline{Y^2}}{g(f_0)^2B_N}$ dove $B_N$ è l'ultimo integrale rimanente sopra e viene chiamato *gain bandwidth product*
 
 ## Sorgenti di rumore
 
 - **Rumore termico (Jhonson)**: Dovuto all'agitazione termica delle cariche ai capi di una resistenza
 
-  E' un rumore bianco con PSD $S_V(f)=4kTR$ dove R è la resistenza
+  E' un rumore bianco con PSD $S_V(f)=4kTR$ dove R è la resistenza (o se misuriamo la corrente $S_I=4kT/R$ poichè $I^2=V^2/R^2$)
+  
+- **Shot noise**: fluttuazione poissoniana del numero di portatori di carica $S_I=2\overline{I}e$
+  (La dim. si effettua semplicemente facendo il calcolo della PSD partendo da un segnale $\overline{I(t)}=\sum_i e\delta(t-t_i)$)
+
+  > **NB** sia il rumore termico che lo shot noise sono rumore bianco
+
+- **Rumore 1/f**: Rumore non ancora ben compreso dovuto a fenomeni di interfaccia. Empiricamente ha PSD $S_V=A/f^\alpha$ con $\alpha \sim 0.8-1.5$ e A costante
+
+- Le varie PDS dovute ai diversi tipi di rumore vanno somate in quadratura
+
+Le sorgenti di rumore possono essere:
+
+- **Detector**: a causa di rumori termici, correnti di age e fenomeni induttivi e autoinduttivi
+- **Elettronica**: Rumore intrinsico dei componenti attivi, capacità in input (compreso il detector), altri fenomeni induttivi e autoinduttivi
+- **Trasmissione**: Resistenza, capacità e induttanza/autoinduttanza dei cavi
+
+E' molto importante mantenere alto il **rapporto segnale rumore (SNR)**.
+Il rumore effettivo del sistema dipende dalle proprietà di filtraggio dell'amplificatore e la capacità in input gioca un ruolo fondamentale (grandi capacità causano rumori maggiori).
+
+Per tenere sotto controllo rumore termico e quello shot bisogna mantenere correnti basse, temperature basse e bandwidth strette.
+Il rumore 1/f invece dipende dal processo di fabbricaazione.
+
+Anche la massa gioca un ruolo fondamentale, tutte le masse devono finire nello stesso identico pozzo
+
+> **Esempio: Misuramento di carica**
+>
+> In un sistema simile si vuole massimizzare il rapporto segnale rumore inteso come carica/deviazione standard del segnale (detto anche ENC)
+> Considerando tutti gli errori e sommandoli in quadratura 
+>
+> <img src="images/Interazione_radiazione_materia/image-20220302174553973.png" alt="image-20220302174553973" style="zoom:50%;" />
+>
+> si nota come bisogna scegliere un tradeoff tra diverse situazioni. (In questa figura $t_p$ è il tempo di picco ovvero il tempo necessario a raggiungere il picco del segnale)
