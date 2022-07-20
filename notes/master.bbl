@@ -1,0 +1,57 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{Kolanoski:2020ksk}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cdb61438aeb4f18b81555a6e90e78f5d}{%
+           family={Kolanoski},
+           familyi={K\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f5ee2b81fdcc2af5637e063906fe3918}{%
+           family={Wermes},
+           familyi={W\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{a359607d5363adfa3da24ab3c9e64a51}
+      \strng{fullhash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{bibnamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authorbibnamehash}{cb554d11ecf13d996cbec39a894c99df}
+      \strng{authornamehash}{a359607d5363adfa3da24ab3c9e64a51}
+      \strng{authorfullhash}{cb554d11ecf13d996cbec39a894c99df}
+      \field{labelalpha}{KW20}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-19-885836-2}
+      \field{month}{6}
+      \field{title}{{Particle Detectors}}
+      \field{year}{2020}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
