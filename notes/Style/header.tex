@@ -22,7 +22,7 @@
 \usepackage{mathrsfs}
 \usepackage{cancel}
 \usepackage{systeme}
-\usepackage{caption}
+\usepackage[margin=1.5cm,labelfont=bf,font=footnotesize]{caption}
 \captionsetup{belowskip=0pt}
 
 \geometry{a4paper,left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm}
@@ -238,7 +238,7 @@
 \declaretheorem[style=thmredbox, name=Corollary, numberwithin=section]{corollary}
 \declaretheorem[style=thmred2box, name=Corollary, numbered=no]{corollary*}
 \declaretheorem[style=thmblue2box, name=Claim, numbered=no]{claim}
-
+\declaretheorem[style=thmred2box, name=Details, numbered=no]{details}
 
 % Redefine proof environment to get a full control. 
 \makeatletter
@@ -377,6 +377,7 @@
 
 \newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
 
+\newcommand{\parag}[1]{\paragraph{#1}\mbox{}\\}
 
 
 
@@ -435,8 +436,37 @@
 % %http://tex.stackexchange.com/questions/76273/multiple-pdfs-with-page-group-included-in-a-single-page-warning
 \pdfsuppresswarningpagegroup=1
 
+
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+
+
+
 % Appendix environment
+\usepackage[export]{adjustbox}
+\usepackage[many]{tcolorbox}
 \usepackage{appendix}
+
+\definecolor{captionbgcolor}{RGB}{103,143,150}
+
+\DeclareCaptionFormat{tcbcaption}{%
+  \begin{tcolorbox}[
+    colback=captionbgcolor,
+    arc=0pt,
+    outer arc=0pt,
+    boxrule=0pt,
+    colupper=white,
+    fontupper=\small\sffamily,
+    boxsep=0pt
+  ]
+  #1#2#3
+  \end{tcolorbox}%
+}
+\captionsetup{format=tcbcaption}
 \def\chapterautorefname{Section}
 \def\sectionautorefname{Section}
 \def\appendixautorefname{Appendix}
