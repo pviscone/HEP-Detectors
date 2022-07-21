@@ -150,6 +150,9 @@ L'energia emessa per una carica accelerata, sia nel limite classico che quantist
 
 > **NB** Ad altissime energie (es. LHC) la bremmstrahlung diventa rilevante anche per muoni e pioni
 
+
+
+
 $$
 -\frac{dE}{dX}|_{\text{Brem.}}= \frac{E}{X_0} \implies
 \\

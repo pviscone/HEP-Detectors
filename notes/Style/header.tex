@@ -84,11 +84,11 @@
 \theoremstyle{definition}
 
 \declaretheoremstyle[
-	headfont=\bfseries\sffamily\color{ForestGreen!70!black}, bodyfont=\normalfont,
+	headfont=\bfseries\sffamily\color{YellowGreen!70!black}, bodyfont=\normalfont,
 	mdframed={
 			linewidth=2pt,
 			rightline=false, topline=false, bottomline=false,
-			linecolor=ForestGreen, backgroundcolor=ForestGreen!5,
+			linecolor=YellowGreen, backgroundcolor=YellowGreen!5,
 			nobreak=false
 		},
 ]{thmgreenbox}
@@ -124,21 +124,21 @@
 ]{thmblueline}
 
 \declaretheoremstyle[
-	headfont=\bfseries\sffamily\color{RawSienna!70!black}, bodyfont=\normalfont,
+	headfont=\bfseries\sffamily\color{RedOrange!70!black}, bodyfont=\normalfont,
 	mdframed={
 			linewidth=2pt,
 			rightline=false, topline=false, bottomline=false,
-			linecolor=RawSienna, backgroundcolor=RawSienna!5,
+			linecolor=RedOrange, backgroundcolor=RedOrange!5,
 			nobreak=false
 		}
 ]{thmredbox}
 
 \declaretheoremstyle[
-	headfont=\bfseries\sffamily\color{RawSienna!70!black}, bodyfont=\normalfont,
+	headfont=\bfseries\sffamily\color{RedOrange!70!black}, bodyfont=\normalfont,
 	mdframed={
 			linewidth=2pt,
 			rightline=false, topline=false, bottomline=false,
-			linecolor=RawSienna, backgroundcolor=RawSienna!8,
+			linecolor=RedOrange, backgroundcolor=RedOrange!8,
 			nobreak=false
 		}
 ]{thmred2box}
@@ -195,12 +195,12 @@
 ]{notgrayline}
 
 % \declaretheoremstyle[
-% 	headfont=\bfseries\sffamily\color{RawSienna!70!black}, bodyfont=\normalfont,
+% 	headfont=\bfseries\sffamily\color{RedOrange!70!black}, bodyfont=\normalfont,
 % 	numbered=no,
 % 	mdframed={
 % 			linewidth=2pt,
 % 			rightline=false, topline=false, bottomline=false,
-% 			linecolor=RawSienna, backgroundcolor=RawSienna!1,
+% 			linecolor=RedOrange, backgroundcolor=RedOrange!1,
 % 		},
 % 	qed=\qedsymbol
 % ]{thmproofbox}
@@ -227,7 +227,30 @@
 		}
 ]{thmanswerbox}
 
-\declaretheorem[style=thmgreenbox, name=Definition, numberwithin=section]{definition}
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{BrickRed!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=BrickRed, backgroundcolor=BrickRed!12,
+			nobreak=false
+		}
+]{thmbrickbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{OliveGreen!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=OliveGreen, backgroundcolor=OliveGreen!1,
+			nobreak=false
+		}
+]{thmolivebox}
+
+
+\declaretheorem[style=thmolivebox, name=Definition, numberwithin=section]{definition}
 \declaretheorem[style=thmgreen2box, name=Definition, numbered=no]{definition*}
 \declaretheorem[style=thmredbox, name=Theorem, numberwithin=section]{theorem}
 \declaretheorem[style=thmred2box, name=Theorem, numbered=no]{theorem*}
@@ -247,21 +270,21 @@
 	\normalfont \topsep-2\p@\@plus6\p@\relax
 	\trivlist
 	\item[\hskip\labelsep
-	            \color{RawSienna!70!black}\sffamily\bfseries
+	            \color{RedOrange!70!black}\sffamily\bfseries
 	            #1\@addpunct{.}]\ignorespaces
-	\begin{mdframed}[linewidth=2pt,rightline=false, topline=false, bottomline=false,linecolor=RawSienna, backgroundcolor=RawSienna!1]
+	\begin{mdframed}[linewidth=2pt,rightline=false, topline=false, bottomline=false,linecolor=RedOrange, backgroundcolor=RedOrange!1]
 		}{%
 		\popQED\endtrivlist\@endpefalse
 	\end{mdframed}
 }
 \makeatother
 
-\declaretheorem[style=thmbluebox, numbered=no, name=Example]{eg}
+\declaretheorem[style=thmgreenbox, numbered=no, name=Example]{eg}
 \declaretheorem[style=thmexplanationbox, numbered=no, name=Proof]{tmpexplanation}
 \newenvironment{explanation}[1][]{\vspace{-10pt}\pushQED{\(\circledast\)}\begin{tmpexplanation}}{\null\hfill\popQED\end{tmpexplanation}}
 
-\declaretheorem[style=thmblueline, numbered=no, name=Remark]{remark}
-\declaretheorem[style=thmblueline, numbered=no, name=Note]{note}
+\declaretheorem[style=thmbluebox, numbered=no, name=Remark]{remark}
+\declaretheorem[style=thmbrickbox, numbered=no, name=Note]{note}
 \declaretheorem[style=thmpinkbox, numbered=no, name=Exercise]{exercise}
 \declaretheorem[style=notgrayline, numbered=no, name=As previously seen]{prev}
 \declaretheorem[style=thmgreen3box, numbered=no, name=Intuition]{intuition}
@@ -301,19 +324,16 @@
 }
 
 % fancy headers
-\usepackage{fancyhdr}
-\pagestyle{fancy}
 
-% LE: left even
-% RO: right odd
-% CE, CO: center even, center odd
-\fancyhead[LE,RO]{Pingbang Hu}
 
-\fancyhead[RO,LE]{\@lecture} % Right odd,  Left even
-\fancyhead[RE,LO]{}          % Right even, Left odd
-\fancyfoot[RO,LE]{\thepage}  % Right odd,  Left even
-\fancyfoot[RE,LO]{}          % Right even, Left odd
-\fancyfoot[C]{\leftmark}     % Center
+\usepackage{titleps,kantlipsum}
+\newpagestyle{mypage}{%
+  \headrule
+  \sethead{\thesection\;\sectiontitle}{}{\subsectiontitle}
+  \setfoot{}{\chaptertitle}{\thepage}
+}
+\settitlemarks{section,subsection}
+\pagestyle{mypage}
 
 \makeatother
 
@@ -506,7 +526,7 @@
 \apptocmd{\subappendices}{\toggletrue{inappendix}}{}{\errmessage{failed to patch}}
 % end appendix autoref patch
 
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 
 
