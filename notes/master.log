@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.29)  21 JUL 2022 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.29)  22 JUL 2022 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1429,6 +1429,12 @@ LaTeX Warning: Label `fig:' multiply defined.
 
 LaTeX Warning: Label `fig:' multiply defined.
 
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
 )
 \openout1 = `master.aux'.
 
@@ -1732,9 +1738,17 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 4.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
+Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
+
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 14.
+Package marginnote Info: Margin note 6.1 is on absolute page 6 on input line 14.
+Package marginnote Info: right page because not two side mode on input line 14.
+Package marginnote Info: xpos seems to be 324.68056pt on input line 14.
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 14.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <18.72003> not available
@@ -1749,311 +1763,478 @@ Overfull \hbox (9.9278pt too wide) in paragraph at lines 27--28
 []\T1/cmr/bx/n/12 Eccitazione/Ionizzazione\T1/cmr/m/n/12 : Un atomo viene ion-iz-zato ri-las-ciando un $\OML/cmm/m/it/12 e[]$ \T1/cmr/m/n/12 poi collezion-
  []
 
+
+LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 29.
+
+Package marginnote Info: Margin note 6.5 is on absolute page 7 on input line 33.
+Package marginnote Info: right page because not two side mode on input line 33.
+Package marginnote Info: xpos seems to be 337.17216pt on input line 33.
 [2
 
 ]
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <15.59996> not available
-(Font)              size <14.4> substituted on input line 38.
+(Font)              size <14.4> substituted on input line 39.
 
-<Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png, id=83, 689.57625pt x 463.7325pt>
+<Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png, id=116, 689.57625pt x 463.7325pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png  used on input line 48.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png  used on input line 47.
 (pdftex.def)             Requested size: 362.37598pt x 243.6967pt.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 49.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 48.
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Calculating math sizes for size <11.86258> on input line 49.
- [3]
-<Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png, id=92, 982.67125pt x 343.2825pt>
+LaTeX Font Info:    Calculating math sizes for size <11.86258> on input line 48.
+ [3 <./Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 57.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <13> not available
+(Font)              size <12> substituted on input line 57.
+
+Package hyperref Info: bookmark level for unknown details defaults to 0 on input line 57.
+<Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png, id=131, 982.67125pt x 343.2825pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png  used on input line 74.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png  used on input line 75.
 (pdftex.def)             Requested size: 430.31847pt x 150.32713pt.
- [4 <./Chapters/images/Interazione_radiazione_materia/image-20220214171429817.png>]
-<Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png, id=102, 328.22626pt x 380.42125pt>
+<Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png, id=132, 328.22626pt x 380.42125pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png  used on input line 87.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png  used on input line 88.
 (pdftex.def)             Requested size: 217.42282pt x 252.00174pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 87--89
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 88--90
  [][] 
  []
 
-<Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png, id=103, 459.7175pt x 403.5075pt>
+<Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png, id=133, 459.7175pt x 403.5075pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png  used on input line 97.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png  used on input line 98.
 (pdftex.def)             Requested size: 217.42282pt x 190.843pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 97--99
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 98--100
  [][] 
  []
 
-[5 <./Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png> <./Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png> <./Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png>]
-<Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png, id=115, 295.1025pt x 348.30125pt>
+[4 <./Chapters/images/Interazione_radiazione_materia/image-20220214173007634.png>]
+Package marginnote Info: Margin note 9.1 is on absolute page 9 on input line 111.
+Package marginnote Info: right page because not two side mode on input line 111.
+Package marginnote Info: xpos seems to be 363.27455pt on input line 111.
+Package marginnote Info: Margin note 9.2 is on absolute page 9 on input line 112.
+Package marginnote Info: right page because not two side mode on input line 112.
+LaTeX Font Info:    Calculating math sizes for size <8.66673> on input line 112.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `U/stmry/m/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.33336> not available
+(Font)              size <5> substituted on input line 112.
+
+Package marginnote Info: xpos seems to be 497.9188pt on input line 112.
+<Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png, id=141, 295.1025pt x 348.30125pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png  used on input line 118.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png  used on input line 122.
 (pdftex.def)             Requested size: 186.85043pt x 220.53639pt.
 
-Underfull \hbox (badness 2707) in paragraph at lines 125--126
+Underfull \hbox (badness 2707) in paragraph at lines 129--130
 \T1/cmr/m/n/12 della pen-e-trazione us-ando l'andamento
  []
 
 
-Overfull \hbox (16.19896pt too wide) in paragraph at lines 115--128
-$[]$  $[]$ 
+Underfull \hbox (badness 1472) in paragraph at lines 132--134
+\T1/cmr/m/n/12 tano dal punto di in-ter-azione) e flut-
  []
 
-<Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png, id=116, 612.2875pt x 219.82124pt>
+[5 <./Chapters/images/Interazione_radiazione_materia/image-20220214175355949.png> <./Chapters/images/Interazione_radiazione_materia/image-20220214175429234.png>]
+<Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png, id=155, 612.2875pt x 219.82124pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png  used on input line 138.
-(pdftex.def)             Requested size: 362.37598pt x 130.09926pt.
-[6 <./Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png>]
-<Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png, id=127, 367.3725pt x 477.785pt>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png  used on input line 143.
+(pdftex.def)             Requested size: 430.31847pt x 154.49098pt.
+<Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png, id=156, 367.3725pt x 477.785pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png  used on input line 147.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png  used on input line 153.
 (pdftex.def)             Requested size: 217.42282pt x 282.77284pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 147--149
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 153--157
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-[]\T1/cmr/m/n/12 Quando sono coin-volti
+Underfull \hbox (badness 7133) in paragraph at lines 162--170
+\T1/cmr/m/n/12 par-ti-celle ri-mane pres-soc-chè costante.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-\T1/cmr/m/n/12 espo-nen-zial-mente (fo-toni).
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
 
  []
 
 
-Underfull \hbox (badness 3930) in paragraph at lines 154--162
-\T1/cmr/m/n/12 non è una delta ma ha
+Underfull \hbox (badness 3503) in paragraph at lines 162--170
+\T1/cmr/m/n/12 alle flut-tuazioni statis-tiche dell'energia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-\T1/cmr/m/n/12 una sua larghezza chia-
- []
-
-
-Underfull \hbox (badness 3872) in paragraph at lines 154--162
-\T1/cmr/m/n/12 mata \T1/cmr/bx/n/12 strag-gling\T1/cmr/m/n/12 : questo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-\T1/cmr/m/n/12 fenomeno è dovuto alle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-\T1/cmr/m/n/12 flut-tuazioni statis-tiche
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-\T1/cmr/m/n/12 dell'energia ri-las-ci-ata nel
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--162
-\T1/cmr/m/n/12 Se si es-prime l'integrale
+Underfull \hbox (badness 1946) in paragraph at lines 162--170
+\T1/cmr/m/n/12 Se si es-prime l'integrale del range in
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 154--162
-\T1/cmr/m/n/12 dente dalle pro-pri-età della
+Underfull \hbox (badness 10000) in paragraph at lines 149--172
+
  []
 
+[6 <./Chapters/images/Interazione_radiazione_materia/image-20220214183616196.png> <./Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png>]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' in size <15.59996> not available
-(Font)              size <14.4> substituted on input line 164.
+(Font)              size <14.4> substituted on input line 172.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 166.
+(hyperref)                removing `math shift' on input line 172.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 166.
+(hyperref)                removing `superscript' on input line 172.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 166.
+(hyperref)                removing `superscript' on input line 172.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 166.
+(hyperref)                removing `math shift' on input line 172.
 
-[7 <./Chapters/images/Interazione_radiazione_materia/image-20220214185815482.png> <./Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png>]
-<Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png, id=137, 758.835pt x 354.32375pt>
+<Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png, id=169, 758.835pt x 354.32375pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png  used on input line 183.
-(pdftex.def)             Requested size: 362.37598pt x 169.20842pt.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png  used on input line 192.
+(pdftex.def)             Requested size: 430.31847pt x 200.93398pt.
+[7 <./Chapters/images/Interazione_radiazione_materia/image-20220216172742194.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 194.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 194.
-
-Package hyperref Info: bookmark level for unknown note defaults to 0 on input line 194.
-
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 197.
-
-[8 <./Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png>]
+(mdframed)              on input line 203.
+Package hyperref Info: bookmark level for unknown note defaults to 0 on input line 203.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 204.
+(mdframed)              on input line 213.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 207.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 207.
-<Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png, id=149, 397.485pt x 264.99pt>
+(mdframed)              on input line 216.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 216.
+Package mdframed Info: Not enough space on this page on input line 219.
+ [8 <./Chapters/images/Interazione_radiazione_materia/image-20220217021527324.png>]
+Package mdframed Info: Not enough space on this page on input line 219.
+<Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png, id=188, 397.485pt x 264.99pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png  used on input line 215.
-(pdftex.def)             Requested size: 136.57448pt x 91.04872pt.
-<Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png, id=150, 405.515pt x 261.97874pt>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png  used on input line 224.
+(pdftex.def)             Requested size: 192.05824pt x 128.0374pt.
+<Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png, id=189, 405.515pt x 261.97874pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png  used on input line 216.
-(pdftex.def)             Requested size: 140.92996pt x 91.04872pt.
-<Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png, id=151, 407.5225pt x 247.92625pt>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png  used on input line 225.
+(pdftex.def)             Requested size: 198.1905pt x 128.0374pt.
+<Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png, id=190, 407.5225pt x 247.92625pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png  used on input line 217.
-(pdftex.def)             Requested size: 149.65544pt x 91.04872pt.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png  used on input line 226.
+(pdftex.def)             Requested size: 210.45784pt x 128.0374pt.
  [9 <./Chapters/images/Interazione_radiazione_materia/image-20220220135143452.png> <./Chapters/images/Interazione_radiazione_materia/image-20220220135223580.png> <./Chapters/images/Interazione_radiazione_materia/image-20220220135322598.png>]
-Overfull \hbox (23.62247pt too wide) in paragraph at lines 238--241
+Overfull \hbox (23.62247pt too wide) in paragraph at lines 245--248
 []\T1/cmr/m/n/12 L'energia persa $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 E$ \T1/cmr/m/n/12 in un tratto $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 x$ \T1/cmr/m/n/12 è la somma di tutti i pro-cessi di ec-c-i-tazione/ionizzazione
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 257.
+(mdframed)              on input line 264.
 [10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 274.
-
-Overfull \hbox (15.10147pt too wide) in paragraph at lines 290--293
-\T1/cmr/m/n/12 nella bethe block quindi es-sezial-mente $\OML/cmm/m/it/12 ^^X \OMS/cmsy/m/n/12 ' \OML/cmm/m/it/12 dE=dx$ \T1/cmr/m/n/12 (al-meno con-cettual-mente, nell'andamento) 
- []
-
-<Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png, id=170, 394.47375pt x 309.155pt>
+(mdframed)              on input line 281.
+<Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png, id=208, 394.47375pt x 309.155pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png  used on input line 302.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png  used on input line 310.
 (pdftex.def)             Requested size: 217.42282pt x 170.399pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 302--304
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 310--312
  [][] 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 310.
+(mdframed)              on input line 318.
 
-Underfull \hbox (badness 2213) in paragraph at lines 310--312
-[][]\T1/cmss/bx/n/12 Remark. [][]\T1/cmr/m/n/12 La lan-dau può es-
+Underfull \hbox (badness 3579) in paragraph at lines 318--320
+[][]\T1/cmss/bx/n/12 Remark. [][]\T1/cmr/m/n/12 La lan-dau può es-sere ap-
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 312.
+ mdframed uses option nobreak mdframed on input line 320.
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
-\T1/cmr/bx/n/12 Vavilov \T1/cmr/m/n/12 gen-er-al-izzò la dis-
+Underfull \hbox (badness 1418) in paragraph at lines 321--323
+\T1/cmr/m/n/12 2 parametri ag-giun-tivi rispetto alla dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
-\T1/cmr/m/n/12 tribuzione an-che per grandi
+Underfull \hbox (badness 10000) in paragraph at lines 306--325
+
  []
 
 [11]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 317.
-Package hyperref Info: bookmark level for unknown details defaults to 0 on input line 317.
-<Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png, id=178, 478.78876pt x 347.2975pt>
+(mdframed)              on input line 325.
+<Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png, id=217, 478.78876pt x 347.2975pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png  used on input line 327.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png  used on input line 335.
 (pdftex.def)             Requested size: 235.54543pt x 170.85558pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 327--329
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 335--337
  [][] 
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 334--336
+Underfull \hbox (badness 2617) in paragraph at lines 342--344
 []\T1/cmr/m/n/12 Altri metrodi per elim-inare in-certezze
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 336--337
+Underfull \hbox (badness 1199) in paragraph at lines 344--345
 []\T1/cmr/m/n/12 Escludere gli elet-troni del-tra dalle
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 336--337
+Underfull \hbox (badness 1824) in paragraph at lines 344--345
 \T1/cmr/m/n/12 mis-urse (Pos-si-bile in cloud/bubble
+ []
+
+
+Overfull \hbox (0.22096pt too wide) in paragraph at lines 331--351
+[]  $[]$  $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--351
+
  []
 
 [12 <./Chapters/images/Interazione_radiazione_materia/image-20220216191943021.png> <./Chapters/images/Interazione_radiazione_materia/image-20220217014236788.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 349.
-<Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png, id=190, 401.5pt x 176.66pt>
+(mdframed)              on input line 355.
+<Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png, id=229, 401.5pt x 176.66pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png  used on input line 353.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png  used on input line 359.
 (pdftex.def)             Requested size: 362.37598pt x 159.45616pt.
 
-Underfull \hbox (badness 3492) in paragraph at lines 355--355
-[]\T1/cmss/bx/n/12 Figure 1.11: |\T1/cmss/m/n/12 De-vi-azione stan-dard dell'angolo di scat-ter-ing
+Underfull \hbox (badness 3492) in paragraph at lines 361--361
+[]\T1/cmss/bx/n/12 Figure 1.12: |\T1/cmss/m/n/12 De-vi-azione stan-dard dell'angolo di scat-ter-ing
  []
 
-<Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png, id=191, 747.79375pt x 273.02pt>
+<Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png, id=230, 747.79375pt x 273.02pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png  used on input line 360.
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png  used on input line 366.
 (pdftex.def)             Requested size: 362.37598pt x 132.30205pt.
 [13 <./Chapters/images/Interazione_radiazione_materia/image-20220217025524958.png> <./Chapters/images/Interazione_radiazione_materia/image-20220217030024845.png>]
-<Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png, id=201, 824.07875pt x 595.22375pt>
+<Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png, id=240, 824.07875pt x 595.22375pt>
 File: Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png Graphic file (type png)
 <use Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png>
-Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png  used on input line 379.
-(pdftex.def)             Requested size: 362.37598pt x 261.74486pt.
-) [14 <./Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png>] [15
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png  used on input line 381.
+(pdftex.def)             Requested size: 430.31847pt x 310.81691pt.
+<Chapters/images/Interazione_radiazione_materia/image-20220220114414907.png, id=241, 815.045pt x 354.32375pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220114414907.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220114414907.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220114414907.png  used on input line 390.
+(pdftex.def)             Requested size: 430.31847pt x 187.07161pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--392
+
+ []
+
+[14 <./Chapters/images/Interazione_radiazione_materia/image-20220217042603821.png>] [15 <./Chapters/images/Interazione_radiazione_materia/image-20220220114414907.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 415--419
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 428.
+<Chapters/images/Interazione_radiazione_materia/image-20220220113210434.png, id=254, 754.82pt x 389.455pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220113210434.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220113210434.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220113210434.png  used on input line 435.
+(pdftex.def)             Requested size: 430.31847pt x 222.0273pt.
+[16 <./Chapters/images/Interazione_radiazione_materia/image-20220220113210434.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 449.
+<Chapters/images/Interazione_radiazione_materia/image-20220220120913778.png, id=262, 643.40375pt x 520.94624pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220120913778.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220120913778.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220120913778.png  used on input line 453.
+(pdftex.def)             Requested size: 362.37598pt x 293.41309pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 462.
+ [17 <./Chapters/images/Interazione_radiazione_materia/image-20220220120913778.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 477.
+<Chapters/images/Interazione_radiazione_materia/image-20220220124719776.png, id=273, 381.425pt x 280.04625pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220124719776.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220124719776.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220124719776.png  used on input line 487.
+(pdftex.def)             Requested size: 217.42282pt x 159.63228pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 487--489
+ [][] 
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 489--489
+[]\T1/cmss/bx/n/12 Figure 1.17: |\T1/cmss/m/n/12 Il lim-ite mas-simo
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 489--489
+\T1/cmss/m/n/12 dell'energia ci-net-ica dell'elettrone è
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 489--489
+[]\T1/cmss/bx/n/12 Figure 1.17: |\T1/cmss/m/n/12 Il lim-ite mas-simo
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 489--489
+\T1/cmss/m/n/12 dell'energia ci-net-ica dell'elettrone è
+ []
+
+[18 <./Chapters/images/Interazione_radiazione_materia/image-20220220124719776.png>]
+<Chapters/images/Interazione_radiazione_materia/image-20220220131152626.png, id=283, 460.72125pt x 134.5025pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220131152626.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220131152626.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220131152626.png  used on input line 514.
+(pdftex.def)             Requested size: 217.42282pt x 63.47272pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 514--516
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--525
+
+ []
+
+<Chapters/images/Interazione_radiazione_materia/image-20220220132317352.png, id=284, 351.3125pt x 285.065pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220132317352.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220132317352.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220132317352.png  used on input line 532.
+(pdftex.def)             Requested size: 217.42282pt x 176.42964pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 532--534
+ [][] 
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 539--540
+[]\T1/cmr/m/n/12 Facendo i cal-coli si può scri-vere la
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 539--540
+\T1/cmr/bx/n/12 lunghezza di as-sor-bi-mento \T1/cmr/m/n/12 per la
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 539--540
+\T1/cmr/m/n/12 pro-duzione di cop-pie in fun-zione della
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 539--540
+\T1/cmr/m/n/12 lunghezza di ra-di-azione per bremm-
+ []
+
+<Chapters/images/Interazione_radiazione_materia/tabella.png, id=285, 498.86375pt x 104.39pt>
+File: Chapters/images/Interazione_radiazione_materia/tabella.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/tabella.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/tabella.png  used on input line 551.
+(pdftex.def)             Requested size: 217.42282pt x 45.49687pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 551--553
+ [][] 
+ []
+
+<Chapters/images/Interazione_radiazione_materia/image-20220220132720070.png, id=286, 364.36125pt x 246.9225pt>
+File: Chapters/images/Interazione_radiazione_materia/image-20220220132720070.png Graphic file (type png)
+<use Chapters/images/Interazione_radiazione_materia/image-20220220132720070.png>
+Package pdftex.def Info: Chapters/images/Interazione_radiazione_materia/image-20220220132720070.png  used on input line 560.
+(pdftex.def)             Requested size: 217.42282pt x 147.34456pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 560--563
+ [][] 
+ []
+
+[19 <./Chapters/images/Interazione_radiazione_materia/image-20220220131152626.png> <./Chapters/images/Interazione_radiazione_materia/image-20220220132317352.png> <./Chapters/images/Interazione_radiazione_materia/tabella.png> <./Chapters/images/Interazione_radiazione_materia/image-20220220132720070.png>]) [20] [21
 
 ] (./Chapters/Appendice.tex
 Appendix A.
-<./Chapters/images/Appendice/image-20220214164823650.png, id=212, 508.90125pt x 331.2375pt>
+<./Chapters/images/Appendice/image-20220214164823650.png, id=308, 508.90125pt x 331.2375pt>
 File: ./Chapters/images/Appendice/image-20220214164823650.png Graphic file (type png)
 <use ./Chapters/images/Appendice/image-20220214164823650.png>
 Package pdftex.def Info: ./Chapters/images/Appendice/image-20220214164823650.png  used on input line 5.
@@ -2076,18 +2257,14 @@ Overfull \hbox (25.61406pt too wide) in paragraph at lines 18--19
 \T1/cmr/m/n/12 bi-mento adroniche per pi-oni : [][]$\T1/cmtt/m/n/12 https : / / pdg . lbl . gov / 2020 / AtomicNuclearProperties /
  []
 
-) [16
+) [22
 
  <./Chapters/images/Appendice/image-20220214164823650.png>]
-
-LaTeX Font Warning: Font shape `T1/cmr/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 54.
-
 
 LaTeX Font Warning: Font shape `T1/cmr/m/sc' in size <13> not available
 (Font)              size <12> substituted on input line 54.
 
-[17
+[23
 
 ] (./master.aux)
 
@@ -2101,23 +2278,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 10CDEA831EC3CFE442D99ECDC45D8376;1497.
+(rerunfilecheck)             Checksum: DF0F0B0CE862AF35ED49849C941284B2;2465.
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57755 strings out of 478238
- 1327693 string characters out of 5850456
- 2312830 words of memory out of 5000000
- 74954 multiletter control sequences out of 15000+600000
- 502550 words of font info for 123 fonts, out of 8000000 for 9000
+ 58061 strings out of 478238
+ 1336334 string characters out of 5850456
+ 2316219 words of memory out of 5000000
+ 75213 multiletter control sequences out of 15000+600000
+ 505758 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,12n,106p,1308b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2986.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on master.pdf (19 pages, 13189197 bytes).
+ 109i,18n,106p,1308b,1318s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2986.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on master.pdf (25 pages, 18520184 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
