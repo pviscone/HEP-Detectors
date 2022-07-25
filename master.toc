@@ -1,0 +1,39 @@
+\contentsline {chapter}{\numberline {1}Interazione Radiazione Materia}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Interazione di particelle cariche}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Particelle massive}{4}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Particelle poco massive ($e^{+} ; e^{-})$}{8}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Fluttuazioni statistiche}{11}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Multiplo Scattering}{14}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Radiazione Cherenkov}{14}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Misture}{15}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}Interazione di fotoni}{16}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Effetto fotoelettrico}{17}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Effetto Compton}{19}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Produzione di coppie}{20}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Interazioni Adroniche}{21}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Interazione di neutrini}{21}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Formazione del segnale}{22}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Equazione del trasporto}{22}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Velocità di Drift}{24}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Diffusione}{25}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Moto delle cariche nei gas}{27}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Moto delle cariche nei semiconduttori}{30}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Formazione del segnale (Schokley-Ramo)}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Wighting field}{31}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Teorema di Shockley-Ramo}{33}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Esempi}{34}{subsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {} Camere a ionizzazione}{34}{section*.60}%
+\contentsline {subsubsection}{\numberline {} Contatori proporzionali}{35}{section*.65}%
+\contentsline {subsubsection}{\numberline {} Detector a semiconduttore}{36}{section*.68}%
+\contentsline {section}{\numberline {2.5}Rumore}{37}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Sorgenti di rumore}{39}{subsection.2.5.1}%
+\contentsline {chapter}{\numberline {3}Particle Identification}{42}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Radiazione Cherenkov}{42}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Cherenkov Threshold}{43}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Spettro di emissione}{44}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {} Spettro dei singoli fotoni}{45}{section*.81}%
+\contentsline {subsubsection}{\numberline {} Photon Yield}{46}{section*.84}%
+\contentsline {subsection}{\numberline {3.1.3}Tipi di detector Cherenkov}{47}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {} Threshold}{48}{section*.86}%
+\contentsline {subsubsection}{\numberline {} RICH (Ring Imaging Cherenkov Detector)}{49}{section*.90}%
+\contentsline {chapter}{\numberline {A}Info utili}{51}{appendix.A}%

@@ -1,0 +1,549 @@
+% basics
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[hyphens]{url}
+\usepackage[style=alphabetic,maxcitenames=1]{biblatex}
+\usepackage[colorlinks=true,linkcolor=cyan,urlcolor=magenta,citecolor=violet]{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage[inline, shortlabels]{enumitem}
+\usepackage{emptypage}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage[usenames,dvipsnames]{xcolor}
+\input{Style/Math.tex}
+
+
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage[]{bm}
+\usepackage{geometry}
+\usepackage{mathrsfs}
+\usepackage{cancel}
+\usepackage{systeme}
+\usepackage[margin=1.5cm,labelfont=bf,font=footnotesize]{caption}
+\captionsetup{belowskip=0pt}
+
+\geometry{a4paper,left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm}
+
+
+% for the big braces
+\usepackage{bigdelim}
+
+
+% correct
+\definecolor{correct}{HTML}{009900}
+\newcommand\correct[2]{\ensuremath{\:}{\color{red}{#1}}\ensuremath{\to }{\color{correct}{#2}}\ensuremath{\:}}
+\newcommand\green[1]{{\color{correct}{#1}}}
+
+
+
+% horizontal rule
+\newcommand\hr{
+	\noindent\rule[0.5ex]{\linewidth}{0.5pt}
+}
+
+
+% hide parts
+\newcommand\hide[1]{}
+
+
+
+% si unitx
+\usepackage{siunitx}
+\sisetup{locale = FR}
+% \renewcommand\vec[1]{\mathbf{#1}}
+\newcommand\mat[1]{\mathbf{#1}}
+
+
+% tikz
+\usepackage{tikz}
+\usetikzlibrary{intersections, angles, quotes, positioning}
+\usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+
+
+\tikzset{
+	force/.style={thick, {Circle[length=2pt]}-stealth, shorten <=-1pt}
+}
+
+% Algorithm Env
+\usepackage[linesnumbered,lined,vlined,ruled,commentsnumbered]{algorithm2e}
+\SetKwComment{Comment}{// }{}
+\SetArgSty{textsl}
+
+% theorems
+\makeatother
+\usepackage{thmtools}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\mdfsetup{skipabove=1em,skipbelow=0em}
+
+\theoremstyle{definition}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{YellowGreen!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=YellowGreen, backgroundcolor=YellowGreen!5,
+			nobreak=false
+		},
+]{thmgreenbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{ForestGreen!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=ForestGreen, backgroundcolor=ForestGreen!8,
+			nobreak=false
+		},
+]{thmgreen2box}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=NavyBlue, backgroundcolor=NavyBlue!5,
+			nobreak=false
+		}
+]{thmbluebox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{TealBlue!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=TealBlue,
+			nobreak=false
+		}
+]{thmblueline}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{RedOrange!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=RedOrange, backgroundcolor=RedOrange!5,
+			nobreak=false
+		}
+]{thmredbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{RedOrange!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=RedOrange, backgroundcolor=RedOrange!8,
+			nobreak=false
+		}
+]{thmred2box}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{SeaGreen!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=SeaGreen, backgroundcolor=SeaGreen!2,
+			nobreak=false
+		}
+]{thmgreen3box}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{WildStrawberry!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=WildStrawberry, backgroundcolor=WildStrawberry!5,
+			nobreak=false
+		},
+]{thmpinkbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{MidnightBlue!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=MidnightBlue, backgroundcolor=MidnightBlue!5,
+			nobreak=false
+		}
+]{thmblue2box}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{Gray!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=Gray, backgroundcolor=Gray!5,
+			nobreak=false
+		}
+]{notgraybox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{Gray!70!black}, bodyfont=\normalfont,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=Gray,
+			nobreak=false
+		}
+]{notgrayline}
+
+% \declaretheoremstyle[
+% 	headfont=\bfseries\sffamily\color{RedOrange!70!black}, bodyfont=\normalfont,
+% 	numbered=no,
+% 	mdframed={
+% 			linewidth=2pt,
+% 			rightline=false, topline=false, bottomline=false,
+% 			linecolor=RedOrange, backgroundcolor=RedOrange!1,
+% 		},
+% 	qed=\qedsymbol
+% ]{thmproofbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=NavyBlue, backgroundcolor=NavyBlue!1,
+			nobreak=false
+		}
+]{thmexplanationbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{WildStrawberry!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=WildStrawberry, backgroundcolor=WildStrawberry!1,
+			nobreak=false
+		}
+]{thmanswerbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{BrickRed!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=BrickRed, backgroundcolor=BrickRed!12,
+			nobreak=false
+		}
+]{thmbrickbox}
+
+\declaretheoremstyle[
+	headfont=\bfseries\sffamily\color{OliveGreen!70!black}, bodyfont=\normalfont,
+	numbered=no,
+	mdframed={
+			linewidth=2pt,
+			rightline=false, topline=false, bottomline=false,
+			linecolor=OliveGreen, backgroundcolor=OliveGreen!1,
+			nobreak=false
+		}
+]{thmolivebox}
+
+
+\declaretheorem[style=thmolivebox, name=Definition, numberwithin=section]{definition}
+\declaretheorem[style=thmgreen2box, name=Definition, numbered=no]{definition*}
+\declaretheorem[style=thmredbox, name=Theorem, numberwithin=section]{theorem}
+\declaretheorem[style=thmred2box, name=Theorem, numbered=no]{theorem*}
+\declaretheorem[style=thmredbox, name=Lemma, numberwithin=section]{lemma}
+\declaretheorem[style=thmred2box, name=Lemma, numbered=no]{lemma*}
+\declaretheorem[style=thmredbox, name=Proposition, numberwithin=section]{proposition}
+\declaretheorem[style=thmred2box, name=Proposition, numbered=no]{proposition*}
+\declaretheorem[style=thmredbox, name=Corollary, numberwithin=section]{corollary}
+\declaretheorem[style=thmred2box, name=Corollary, numbered=no]{corollary*}
+\declaretheorem[style=thmblue2box, name=Claim, numbered=no]{claim}
+\declaretheorem[style=thmred2box, name=Details, numbered=no]{details}
+
+% Redefine proof environment to get a full control. 
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep-2\p@\@plus6\p@\relax
+	\trivlist
+	\item[\hskip\labelsep
+	            \color{RedOrange!70!black}\sffamily\bfseries
+	            #1\@addpunct{.}]\ignorespaces
+	\begin{mdframed}[linewidth=2pt,rightline=false, topline=false, bottomline=false,linecolor=RedOrange, backgroundcolor=RedOrange!1]
+		}{%
+		\popQED\endtrivlist\@endpefalse
+	\end{mdframed}
+}
+\makeatother
+
+\declaretheorem[style=thmgreenbox, numbered=no, name=Example]{eg}
+\declaretheorem[style=thmexplanationbox, numbered=no, name=Proof]{tmpexplanation}
+\newenvironment{explanation}[1][]{\vspace{-10pt}\pushQED{\(\circledast\)}\begin{tmpexplanation}}{\null\hfill\popQED\end{tmpexplanation}}
+
+\declaretheorem[style=thmbluebox, numbered=no, name=Remark]{remark}
+\declaretheorem[style=thmbrickbox, numbered=no, name=Note]{note}
+\declaretheorem[style=thmpinkbox, numbered=no, name=Exercise]{exercise}
+\declaretheorem[style=notgrayline, numbered=no, name=As previously seen]{prev}
+\declaretheorem[style=thmgreen3box, numbered=no, name=Intuition]{intuition}
+\declaretheorem[style=notgraybox, numbered=no, name=Notation]{notation}
+\declaretheorem[style=thmpinkbox, numbered=no, name=Problem]{problem}
+\declaretheorem[style=thmanswerbox, numbered=no, name=Answer]{tmpanswer}
+\newenvironment{answer}[1][]{\vspace{-10pt}\pushQED{\(\circledast\)}\begin{tmpanswer}}{\null\hfill\popQED\end{tmpanswer}}
+
+
+\usepackage{etoolbox}
+\renewcommand{\qed}{\null\hfill\(\blacksquare\)}
+
+\makeatletter
+
+\def\testdateparts#1{\dateparts#1\relax}
+\def\dateparts#1 #2 #3 #4 #5\relax{
+	\marginpar{\small\textsf{\mbox{#1 #2 #3 #5}}}
+}
+
+\def\@lecture{}%
+\newcommand{\lecture}[3]{
+	\ifthenelse{\isempty{#3}}{%
+		\def\@lecture{Lecture #1}%
+	}{%
+		\def\@lecture{Lecture #1: #3}%
+	}%
+	\section*{\@lecture}
+	\marginpar{\small\textsf{\mbox{#2}}}
+}
+\usepackage{pgffor}%
+\newcommand{\lec}[2]{%
+	\foreach \c in {#1,...,#2}{%
+			\IfFileExists{Lectures/lec_\c.tex} {%
+				\input{Lectures/lec_\c.tex}%
+			}{}%
+		}%
+}
+
+% fancy headers
+
+
+\usepackage{titleps,kantlipsum}
+\newpagestyle{mypage}{%
+  \headrule
+  \sethead{\thesection\;\sectiontitle}{}{\subsectiontitle}
+  \footrule
+  \setfoot{\thechapter \; \MakeUppercase{\chaptertitle}}{}{\thepage}
+}
+\settitlemarks{chapter,section,subsection}
+\pagestyle{mypage}
+
+\makeatother
+
+% notes
+\usepackage{xargs}                      % Use more than one optional parameter in a new commands
+
+\iffalse
+\usepackage[colorinlistoftodos,prependcaption,textsize=scriptsize]{todonotes}
+
+
+\newcommandx{\Lwtf}[2][1=]{{%
+ \let\marginpar\marginnote
+ \reversemarginpar
+ \renewcommand{\baselinestretch}{0.8}%
+ \todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}}
+
+\newcommandx{\Lmathwtf}[2][1=]{{%
+ \let\marginpar\marginnote
+ \reversemarginpar
+ \renewcommand{\baselinestretch}{0.8}%
+ \text{\todo[fancyline,linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}}}
+
+\newcommandx{\Lchange}[2][1=]{{%
+ \let\marginpar\marginnote
+ \reversemarginpar
+ \renewcommand{\baselinestretch}{0.8}%
+ \todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}}
+
+\newcommandx{\Linfo}[2][1=]{{%
+ \let\marginpar\marginnote
+ \reversemarginpar
+ \renewcommand{\baselinestretch}{0.8}%
+ \todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}}
+
+\newcommandx{\Lmathinfo}[2][1=]{{%
+ \let\marginpar\marginnote
+ \reversemarginpar
+ \renewcommand{\baselinestretch}{0.8}%
+ \text{\todo[fancyline,linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}}}
+
+
+\newcommandx{\Limprovement}[2][1=]{{%
+ \let\marginpar\marginnote
+ \reversemarginpar
+ \renewcommand{\baselinestretch}{0.8}%
+ \todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}}
+
+ 
+ 
+\newcommandx{\wtf}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+
+\newcommandx{\mathwtf}[2][1=]{\text{\todo[fancyline,linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}}
+
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+
+\newcommandx{\mathinfo}[2][1=]{\text{\todo[fancyline,linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}}
+
+
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+\fi
+
+
+\newcommand{\parag}[1]{\paragraph{#1}\mbox{}\\}
+
+
+
+
+\newcommand{\mathexplain}[3][2]{
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{u}}}{
+         \overbracket{#2}^{\mathclap{\textcolor{OliveGreen}{\substack{#3}}}}
+         }{}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{d}}}{
+         \underbracket{#2}_{\mathclap{\textcolor{OliveGreen}{\substack{#3}}}}
+         }{}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{cu}}}{
+         \overbrace{#2}^{\mathclap{\textcolor{OliveGreen}{\substack{#3}}}}
+         }{}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{cd}}}{
+         \underbrace{#2}_{\mathclap{\textcolor{OliveGreen}{\substack{#3}}}}
+         }{}
+}
+
+
+\newcommand{\mathwarn}[3][2]{
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{u}}}{
+         \overbracket{#2}^{\mathclap{\textcolor{BrickRed}{\substack{#3}}}}
+        }{}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{d}}}{
+         \underbracket{#2}_{\mathclap{\textcolor{BrickRed}{\substack{#3}}}}
+        }{}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{cu}}}{
+         \overbrace{#2}^{\mathclap{\textcolor{BrickRed}{\substack{#3}}}}
+        }{}
+    \ifthenelse{\equal{\detokenize{#1}}{\detokenize{cd}}}{
+         \underbrace{#2}_{\mathclap{\textcolor{BrickRed}{\substack{#3}}}}
+        }{}
+}
+
+
+
+
+
+
+
+\usepackage[]{marginnote}
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\scriptsize #1]%
+{\raggedright\scriptsize #1}}
+%\let\marginpar\marginnote
+
+% Fix some stuff
+% %http://tex.stackexchange.com/questions/76273/multiple-pdfs-with-page-group-included-in-a-single-page-warning
+\pdfsuppresswarningpagegroup=1
+
+
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+
+
+
+% Appendix environment
+\usepackage[export]{adjustbox}
+\usepackage[many]{tcolorbox}
+\usepackage{appendix}
+
+\definecolor{captionbgcolor}{RGB}{103,143,150}
+
+\DeclareCaptionFormat{tcbcaption}{%
+  \begin{tcolorbox}[
+    colback=captionbgcolor,
+    arc=0pt,
+    outer arc=0pt,
+    boxrule=0pt,
+    colupper=white,
+    fontupper=\small\sffamily,
+    boxsep=0pt
+  ]
+  #1#2#3
+  \end{tcolorbox}%
+}
+\captionsetup{format=tcbcaption}
+\def\chapterautorefname{Section}
+\def\sectionautorefname{Section}
+\def\appendixautorefname{Appendix}
+\renewcommand\appendixname{Appendix}
+\renewcommand\appendixtocname{Appendix}
+\renewcommand\appendixpagename{Appendix}
+% begin appendix autoref patch [\autoref subsections in appendix](https://tex.stackexchange.com/questions/149807/autoref-subsections-in-appendix)
+\makeatletter
+\patchcmd{\hyper@makecurrent}{%
+	\ifx\Hy@param\Hy@chapterstring
+		\let\Hy@param\Hy@chapapp
+	\fi
+}{%
+	\iftoggle{inappendix}{%true-branch
+		% list the names of all sectioning counters here
+		\@checkappendixparam{chapter}%
+		\@checkappendixparam{section}%
+		\@checkappendixparam{subsection}%
+		\@checkappendixparam{subsubsection}%
+		\@checkappendixparam{paragraph}%
+		\@checkappendixparam{subparagraph}%
+	}{}%
+}{}{\errmessage{failed to patch}}
+
+\newcommand*{\@checkappendixparam}[1]{%
+	\def\@checkappendixparamtmp{#1}%
+	\ifx\Hy@param\@checkappendixparamtmp
+		\let\Hy@param\Hy@appendixstring
+	\fi
+}
+\makeatletter
+
+\newtoggle{inappendix}
+\togglefalse{inappendix}
+
+\apptocmd{\appendix}{\toggletrue{inappendix}}{}{\errmessage{failed to patch}}
+\apptocmd{\subappendices}{\toggletrue{inappendix}}{}{\errmessage{failed to patch}}
+% end appendix autoref patch
+
+\setcounter{tocdepth}{3}
+
+\newcommand{\ssec}[1]{
+	\subsection*{#1}
+\subsectionmark{#1}
+\addcontentsline{toc}{subsection}{\protect\numberline{} #1}
+}
+\newcommand{\sssec}[1]{
+	\subsubsection*{#1}
+\subsubsectionmark{#1}
+\addcontentsline{toc}{subsubsection}{\protect\numberline{} #1}
+}
+
+
+\newcommand{\gr}[1]{
+	\textcolor{OliveGreen}{#1}}
+\newcommand{\red}[1]{
+	{\textcolor{BrickRed}}{#1}}
+
+
+
+
+
+
